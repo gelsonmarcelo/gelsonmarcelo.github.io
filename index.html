@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gelson Marcelo — desenvolvedor mobile. Apps publicados: Coleta Frai e Slice Heads.">
+  <title>Gelson Marcelo — Desenvolvedor Mobile</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Gelson Marcelo</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Desenvolvedor mobile · Santa Catarina</p>
+          <h1>Olá, sou <span class="highlight">Gelson Marcelo</span></h1>
+          <p class="lead">
+            Desenvolvo aplicativos Android e este site. Trabalho com mobile na
+            <strong>Letras</strong> e, no tempo livre, publico apps próprios com
+            foco em experiência simples e útil.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-secondary" href="#contato">Falar comigo</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!--
+            ASSET: substitua o placeholder pela sua foto.
+            Coloque o arquivo em: assets/img/avatar.jpg
+            (ou .png / .webp — ajuste o src abaixo se necessário)
+          -->
+          <div class="avatar-frame">
+            <img
+              class="avatar-img"
+              src="assets/img/avatar.jpg"
+              alt="Foto de Gelson Marcelo"
+              width="280"
+              height="280"
+              onload="this.nextElementSibling.setAttribute('hidden','')"
+              onerror="this.setAttribute('hidden','')"
+            >
+            <div class="img-placeholder avatar-placeholder">
+              <span>assets/img/avatar.jpg</span>
+              <small>Sua foto aqui</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="container">
+        <h2>Sobre</h2>
+        <div class="about-grid">
+          <p>
+            Formado em Análise e Desenvolvimento de Sistemas pelo Instituto Federal
+            Catarinense, sigo me especializando em desenvolvimento mobile, com foco
+            em Android. Gosto de aprender na prática e transformar ideias em apps
+            publicados na loja.
+          </p>
+          <p>
+            Além dos projetos no trabalho, mantenho produtos próprios — como os
+            apps abaixo — e a documentação deles neste site. Não sou especialista
+            em tudo; prefiro entregar algo claro, estável e que faça sentido para
+            quem usa.
+          </p>
+        </div>
+        <ul class="stack-tags" aria-label="Áreas e tecnologias">
+          <li>Android</li>
+          <li>Kotlin</li>
+          <li>Java</li>
+          <li>Flutter</li>
+          <li>Firebase</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projetos" class="section projects">
+      <div class="container">
+        <h2>Projetos publicados</h2>
+        <p class="section-intro">
+          Dois apps na Google Play, com documentação e política de privacidade
+          hospedadas aqui.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <!--
+                ASSET: screenshot ou mockup do Coleta Frai
+                Arquivo sugerido: assets/img/coleta-frai.png
+              -->
+              <img
+                class="project-img"
+                src="assets/img/coleta-frai.png"
+                alt="Captura de tela do app Coleta Frai"
+                width="320"
+                height="568"
+                onload="this.nextElementSibling.setAttribute('hidden','')"
+                onerror="this.setAttribute('hidden','')"
+              >
+              <div class="img-placeholder project-placeholder">
+                <span>assets/img/coleta-frai.png</span>
+                <small>Screenshot do app</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Coleta Frai</h3>
+              <p class="project-tag">Utilitário · Ambiente</p>
+              <p>
+                Conscientização ambiental e coleta seletiva em Fraiburgo/SC:
+                lembretes, cronograma por bairro, pontos de entrega e conteúdo
+                educativo.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=br.edu.ifc.fraiburgo.coletafrai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Google Play</a>
+                <a href="apps-documentation/coleta-frai/">Documentação</a>
+                <a href="apps-documentation/coleta-frai/privacy-policy.html">Privacidade</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <!--
+                ASSET: screenshot ou mockup do Slice Heads
+                Arquivo sugerido: assets/img/slice-heads.png
+              -->
+              <img
+                class="project-img"
+                src="assets/img/slice-heads.png"
+                alt="Captura de tela do app Slice Heads"
+                width="320"
+                height="568"
+                onload="this.nextElementSibling.setAttribute('hidden','')"
+                onerror="this.setAttribute('hidden','')"
+              >
+              <div class="img-placeholder project-placeholder">
+                <span>assets/img/slice-heads.png</span>
+                <small>Screenshot do app</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Slice Heads</h3>
+              <p class="project-tag">Jogo casual · Android</p>
+              <p>
+                Corte cabeças com gestos, evite bombas e tente bater seu recorde.
+                Animação em Rive, modo paisagem e integração opcional com Play Games.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.gelsonschikorski.sliceheads"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Google Play</a>
+                <a href="apps-documentation/sliceheads/">Documentação</a>
+                <a href="apps-documentation/sliceheads/privacy-policy.html">Privacidade</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="container contact-box">
+        <h2>Contato</h2>
+        <p>
+          Dúvidas sobre os apps, sugestões ou apenas um oi — pode chamar por
+          e-mail ou redes.
+        </p>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:gelsonschikorski1998@gmail.com">gelsonschikorski1998@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/gelsonmarcelo" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gelson-nascimento-9058201ba" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Gelson Marcelo. Site e apps desenvolvidos por mim.</p>
+      <p class="footer-note">
+        Documentações em
+        <a href="apps-documentation/coleta-frai/">Coleta Frai</a> e
+        <a href="apps-documentation/sliceheads/">Slice Heads</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
