@@ -1,4 +1,4 @@
-[← Documentações dos apps](../index.html)
+[← Início](../../index.html)
 
 # Documentação Slice Heads
 

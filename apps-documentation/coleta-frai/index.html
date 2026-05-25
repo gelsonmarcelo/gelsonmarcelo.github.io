@@ -3,71 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documentação Coleta Frai</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      background-color: #f4f4f4;
-    }
-    .content {
-      width: 80%;
-      max-width: 900px;
-      padding: 20px;
-      background-color: white;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    h1, h2, h3 {
-      color: #333;
-    }
-    p {
-      color: #555;
-      text-align: justify;
-      margin-bottom: 15px;
-    }
-    img {
-      display: block;
-      margin: 10px auto;
-      max-width: 100%;
-    }
-    .img-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .center {
-      text-align: center;
-    }
-    .nav-back {
-      margin-bottom: 1em;
-      font-size: 0.95em;
-    }
-  </style>
+  <meta name="description" content="Documentação do app Coleta Frai — lembretes, cronograma e coleta seletiva em Fraiburgo/SC.">
+  <title>Documentação — Coleta Frai</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/doc.css">
 </head>
 <body>
-  <div class="content">
-    <p class="nav-back"><a href="../index.html">← Documentações dos apps</a></p>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-    <h1 class="center">Documentação Coleta Frai ♻️</h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../../index.html">Gelson Marcelo</a>
+      <nav class="nav" aria-label="Documentação">
+        <a href="../../index.html">Início</a>
+        <a href="index.html" class="is-active" aria-current="page">Documentação</a>
+        <a href="privacy-policy.html">Privacidade</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="doc-main">
+    <div class="container">
+      <nav class="doc-breadcrumb" aria-label="Navegação">
+        <a href="../../index.html">Início</a>
+        <span class="doc-breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Coleta Frai — documentação</span>
+      </nav>
+
+      <article class="doc-content">
+    <h1>Documentação Coleta Frai ♻️</h1>
 
     <p class="center">
-      <a href="https://play.google.com/store/apps/details?id=br.edu.ifc.fraiburgo.coletafrai">
-        <img src="https://files.adventistas.org/institucional/pt/2023/02/google-play-badge.png" width="20%" alt="Disponível no Google Play">
+      <a class="doc-play-badge" href="https://play.google.com/store/apps/details?id=br.edu.ifc.fraiburgo.coletafrai" target="_blank" rel="noopener noreferrer">
+        <img src="https://files.adventistas.org/institucional/pt/2023/02/google-play-badge.png" alt="Disponível no Google Play">
       </a>
     </p>
 
@@ -79,14 +47,14 @@
     </p>
 
     <h3>Aviso</h3>
-    <p>⚠️ Aviso: Este aplicativo é uma iniciativa privada e não possui vínculo, afiliação ou endosso da Prefeitura de Fraiburgo, da Sanefrai ou de qualquer órgão governamental. As informações apresentadas são de caráter informativo, obtidas a partir de fontes públicas como o site da Sanefrai (https://sanefrai.sc.gov.br/).</p>
+    <p class="doc-notice"><strong>Aviso:</strong> Este aplicativo é uma iniciativa privada e não possui vínculo, afiliação ou endosso da Prefeitura de Fraiburgo, da Sanefrai ou de qualquer órgão governamental. As informações apresentadas são de caráter informativo, obtidas a partir de fontes públicas como o site da <a href="https://sanefrai.sc.gov.br/" target="_blank" rel="noopener noreferrer">Sanefrai</a>.</p>
 
     <h2>Funcionalidades</h2>
 
     <h3>Lembretes</h3>
     <p>A função de programação de lembretes é uma das principais ferramentas do Coleta Frai. É importante lembrar que cada bairro tem seu próprio <a href="https://sanefrai.sc.gov.br/coleta">cronograma de coleta de lixo</a> reciclável e a coleta é realizada em dias específicos e em horários determinados. Programar lembretes ajuda os usuários a lembrarem de colocar o material reciclável no dia e período corretos, garantindo que o material seja coletado e processado adequadamente. É importante enfatizar que o caminhão de coleta só passa no dia e período pré-determinados pelo cronograma em cada bairro, e se o material não estiver no saco reciclável naquele momento, não será recolhido pela Coleta Seletiva e posteriormente pode acabar sendo destinado ao aterro sanitário, o que não é bom para o meio ambiente.</p>
 
-    <div class="img-container">
+    <div class="doc-img-row">
       <img width="200" src="https://user-images.githubusercontent.com/49684358/235470281-b209b306-e155-49ce-9753-72f453800c9c.png" alt="Tela de lembretes"/>
       <img width="200" src="https://user-images.githubusercontent.com/49684358/235470936-9aaea33d-09e2-4232-99ce-2b43bf00e733.jpeg" alt="Configuração de lembrete"/>
     </div>
@@ -94,7 +62,7 @@
     <h3>Cronograma/Roteiro da Coleta Seletiva</h3>
     <p>A funcionalidade de escolher o bairro no Coleta Frai é essencial para garantir que os usuários tenham acesso ao cronograma de coleta seletiva correto. Isso ajuda a evitar confusões na hora de descartar o material reciclável, garantindo que o material será coletado no dia correto. Com essa funcionalidade, o usuário pode verificar facilmente quando o caminhão da coleta seletiva passará em seu bairro e se programar para disponibilizar o material reciclável no período certo. Isso é importante, pois o caminhão da coleta seletiva não coleta material em dias fora do cronograma em um dia errado, o que pode fazer com que ele seja descartado no aterro sanitário, prejudicando o meio ambiente. Com o Coleta Frai, os usuários podem fazer a sua parte para ajudar o planeta, contribuindo para uma coleta seletiva mais eficiente e sustentável.</p>
 
-    <div class="img-container">
+    <div class="doc-img-row">
       <img width="200" src="https://user-images.githubusercontent.com/49684358/235470281-b209b306-e155-49ce-9753-72f453800c9c.png" alt="Seleção de bairro"/>
       <img width="200" src="https://user-images.githubusercontent.com/49684358/235470024-fb0df63a-f3f8-4da4-a3cd-c55e19687d1f.png" alt="Cronograma de coleta"/>
     </div>
@@ -133,7 +101,7 @@
     <p>Na página "Razões para Reciclar", os usuários podem encontrar argumentos convincentes sobre como a reciclagem pode ajudar a preservar o meio ambiente, reduzir a quantidade de lixo que vai para os aterros sanitários, economizar recursos naturais, entre outros. Essas informações podem ajudar a motivar as pessoas a adotar práticas mais sustentáveis em suas vidas cotidianas.</p>
     <p>Já na página "Dicas de Reciclagem", os usuários encontram informações úteis para contribuir da melhor forma possível com a coleta seletiva, evitando descartar materiais contaminados e outras dicas que ajudam até a reduzir a quantidade de lixo gerado.</p>
 
-    <div class="img-container">
+    <div class="doc-img-row">
       <img width="200" src="https://user-images.githubusercontent.com/49684358/235472267-cb390221-64ee-4574-8b5f-1974c856b57e.png" alt="Razões para reciclar"/>
       <img width="200" src="https://user-images.githubusercontent.com/49684358/235472308-0935373b-a681-4ef0-bec4-84b9212a3b06.png" alt="Dicas de reciclagem"/>
     </div>
@@ -141,19 +109,33 @@
     <h4>Dark Theme</h4>
     <p>Você poderá escolher entre os temas claro e escuro no app!</p>
 
-    <div class="img-container">
+    <div class="doc-img-row">
       <img width="200" src="https://github.com/gelsonmarcelo/coleta-frai-documentation/assets/49684358/734bdd92-cc1c-453b-af73-ca15bd4bdaff" alt="Tema claro"/>
       <img width="200" src="https://github.com/gelsonmarcelo/coleta-frai-documentation/assets/49684358/3f58ab1e-e300-4995-8b9a-10856e8852e4" alt="Tema escuro"/>
       <img width="200" src="https://github.com/gelsonmarcelo/coleta-frai-documentation/assets/49684358/d37d4dd1-1118-4d19-aaf9-c6e1a30ce5f2" alt="Alternância de tema"/>
     </div>
 
-    <hr>
+    <div class="doc-footer-block">
+      <p><strong>Dúvidas:</strong> <a href="mailto:gelsonschikorski1998@gmail.com">gelsonschikorski1998@gmail.com</a></p>
+      <p><strong>Bugs:</strong> <a href="https://github.com/gelsonmarcelo/apps-documentation/issues/new" target="_blank" rel="noopener noreferrer">Abrir issue</a></p>
+      <p><strong>Sugestões:</strong> <a href="https://github.com/gelsonmarcelo/apps-documentation/discussions/new?category=ideas" target="_blank" rel="noopener noreferrer">Nova discussão</a></p>
+    </div>
+      </article>
+    </div>
+  </main>
 
-    <footer>
-      <p>Em caso de dúvidas, entrar em contato: <a href="mailto:gelsonschikorski1998@gmail.com">gelsonschikorski1998@gmail.com</a></p>
-      <p>Bugs: <a href="https://github.com/gelsonmarcelo/apps-documentation/issues/new">Clique aqui</a></p>
-      <p>Sugestões: <a href="https://github.com/gelsonmarcelo/apps-documentation/discussions/new?category=ideas">Clique aqui</a></p>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Gelson Marcelo.</p>
+      <p class="footer-note">
+        <a href="../../index.html">Início</a> ·
+        <a href="privacy-policy.html">Política de privacidade</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
