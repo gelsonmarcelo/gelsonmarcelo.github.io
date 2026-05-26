@@ -101,7 +101,49 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--header-h);
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  height: auto;
+  min-height: var(--header-h);
+  padding: 0.5rem 0;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.lang-switcher__btn {
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.65rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--text-muted);
+  background: transparent;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.lang-switcher__btn:hover {
+  color: var(--text);
+}
+
+.lang-switcher__btn[aria-pressed="true"] {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+.lang-switcher__btn[aria-pressed="true"]:hover {
+  color: var(--bg);
+  background: var(--accent-hover);
 }
 
 .logo {
