@@ -3,20 +3,20 @@
    ========================================================================== */
 
 :root {
-  --bg: #12100d;
-  --bg-elevated: #1a1713;
-  --bg-card: #221e18;
-  --text: #edeae6;
-  --text-muted: #9c948a;
-  --accent: #eb8f17;
-  --accent-hover: #f5ad4a;
-  --accent-rgb: 235, 143, 23;
+  --bg: #0f1419;
+  --bg-elevated: #1a222d;
+  --bg-card: #1e2836;
+  --text: #e8edf4;
+  --text-muted: #9aa8b8;
+  --accent: #5b9fd4;
+  --accent-hover: #7eb8e8;
+  --accent-rgb: 91, 159, 212;
   --accent-soft: rgba(var(--accent-rgb), 0.15);
   --accent-glow: rgba(var(--accent-rgb), 0.18);
   --accent-glow-soft: rgba(var(--accent-rgb), 0.06);
-  --accent-border: rgba(var(--accent-rgb), 0.28);
-  --accent-border-hover: rgba(var(--accent-rgb), 0.42);
-  --border: rgba(255, 235, 210, 0.08);
+  --accent-border: rgba(var(--accent-rgb), 0.25);
+  --accent-border-hover: rgba(var(--accent-rgb), 0.35);
+  --border: rgba(255, 255, 255, 0.08);
   --radius: 12px;
   --radius-lg: 20px;
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
@@ -92,7 +92,7 @@ a:hover {
   top: 0;
   z-index: 50;
   height: var(--header-h);
-  background: rgba(18, 16, 13, 0.88);
+  background: rgba(15, 20, 25, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
