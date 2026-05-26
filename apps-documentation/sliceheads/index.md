@@ -135,9 +135,9 @@ A cena de jogo é baseada em [**Heads Will Roll**](https://rive.app/marketplace/
 
 **Dúvidas:** [gelsonschikorski1998@gmail.com](mailto:gelsonschikorski1998@gmail.com)
 
-**Bugs:** [Abrir issue](https://github.com/gelsonmarcelo/apps-documentation/issues/new)
+**Bugs:** [Abrir issue](https://github.com/gelsonmarcelo/gelsonmarcelo.github.io/issues/new)
 
-**Sugestões:** [Nova discussão (Ideas)](https://github.com/gelsonmarcelo/apps-documentation/discussions/new?category=ideas)
+**Sugestões:** [Nova discussão (Ideas)](https://github.com/gelsonmarcelo/gelsonmarcelo.github.io/discussions/new?category=ideas)
 
 ---
 

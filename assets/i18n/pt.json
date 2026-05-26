@@ -180,8 +180,8 @@
     },
     "footer": {
       "questionsHtml": "<strong>Dúvidas:</strong> <a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>",
-      "bugsHtml": "<strong>Bugs:</strong> <a href=\"https://github.com/gelsonmarcelo/apps-documentation/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir issue</a>",
-      "suggestionsHtml": "<strong>Sugestões:</strong> <a href=\"https://github.com/gelsonmarcelo/apps-documentation/discussions/new?category=ideas\" target=\"_blank\" rel=\"noopener noreferrer\">Nova discussão</a>"
+      "bugsHtml": "<strong>Bugs:</strong> <a href=\"https://github.com/gelsonmarcelo/gelsonmarcelo.github.io/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir issue</a>",
+      "suggestionsHtml": "<strong>Sugestões:</strong> <a href=\"https://github.com/gelsonmarcelo/gelsonmarcelo.github.io/discussions/new?category=ideas\" target=\"_blank\" rel=\"noopener noreferrer\">Nova discussão</a>"
     }
   },
   "coletaFraiPrivacy": {
@@ -387,8 +387,8 @@
     "footer": {
       "heading": "Contato e feedback",
       "questionsHtml": "<strong>Dúvidas:</strong> <a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>",
-      "bugsHtml": "<strong>Bugs:</strong> <a href=\"https://github.com/gelsonmarcelo/apps-documentation/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir issue</a>",
-      "suggestionsHtml": "<strong>Sugestões:</strong> <a href=\"https://github.com/gelsonmarcelo/apps-documentation/discussions/new?category=ideas\" target=\"_blank\" rel=\"noopener noreferrer\">Nova discussão (Ideas)</a>",
+      "bugsHtml": "<strong>Bugs:</strong> <a href=\"https://github.com/gelsonmarcelo/gelsonmarcelo.github.io/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir issue</a>",
+      "suggestionsHtml": "<strong>Sugestões:</strong> <a href=\"https://github.com/gelsonmarcelo/gelsonmarcelo.github.io/discussions/new?category=ideas\" target=\"_blank\" rel=\"noopener noreferrer\">Nova discussão (Ideas)</a>",
       "note": "Slice Heads — documentação para usuários · última revisão alinhada ao app v1.0"
     }
   },
