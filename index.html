@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-i18n-page="home">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gelson Marcelo — desenvolvedor mobile. Apps publicados: Coleta Frai e Slice Heads.">
+  <title>Gelson Marcelo — Desenvolvedor Mobile</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo" data-i18n="common.skipLink">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" data-i18n="common.logo">Gelson Marcelo</a>
+      <nav class="nav" data-i18n-attr="aria-label:common.mainNavAria" aria-label="Principal">
+        <a href="#sobre" data-i18n="common.nav.about">Sobre</a>
+        <a href="#projetos" data-i18n="common.nav.projects">Projetos</a>
+        <a href="#contato" data-i18n="common.nav.contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow" data-i18n="home.hero.eyebrow">Desenvolvedor mobile</p>
+          <h1 data-i18n-html="home.hero.title">Olá, sou <span class="highlight">Gelson Marcelo</span></h1>
+          <p class="lead" data-i18n-html="home.hero.lead">
+            Desenvolvo aplicativos Android. Trabalho com mobile na
+            <strong>Letras</strong> e, no tempo livre, publico apps próprios com
+            foco em experiência simples e útil.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos" data-i18n="home.hero.ctaProjects">Ver projetos</a>
+            <a class="btn btn-secondary" href="#contato" data-i18n="home.hero.ctaContact">Falar comigo</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-frame">
+            <img
+              class="avatar-img"
+              src="assets/img/avatar.jpg"
+              data-i18n-attr="alt:home.hero.avatarAlt"
+              alt="Foto de Gelson Marcelo"
+              width="280"
+              height="280"
+              onload="this.nextElementSibling.setAttribute('hidden','')"
+              onerror="this.setAttribute('hidden','')"
+            >
+            <div class="img-placeholder avatar-placeholder">
+              <span data-i18n="home.placeholders.avatarPath">assets/img/avatar.jpg</span>
+              <small data-i18n="home.placeholders.avatarHint">Sua foto aqui</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="container">
+        <h2 data-i18n="home.about.title">Sobre</h2>
+        <div class="about-grid">
+          <p data-i18n="home.about.p1">
+            Formado em Análise e Desenvolvimento de Sistemas pelo Instituto Federal
+            Catarinense, sigo me especializando em desenvolvimento mobile, com foco
+            em Android. Gosto de aprender na prática e transformar ideias em apps
+            publicados na loja.
+          </p>
+          <p data-i18n="home.about.p2">
+            Além dos projetos no trabalho, mantenho produtos próprios — como os
+            apps abaixo — e a documentação deles neste site. Não sou especialista
+            em tudo; prefiro entregar algo claro, estável e que faça sentido para
+            quem usa.
+          </p>
+        </div>
+        <ul class="stack-tags" data-i18n-list="home.about.stack" data-i18n-attr="aria-label:home.about.stackAria" aria-label="Áreas e tecnologias">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projetos" class="section projects">
+      <div class="container">
+        <h2 data-i18n="home.projects.title">Projetos publicados</h2>
+        <p class="section-intro" data-i18n="home.projects.intro">
+          Dois apps na Google Play, com documentação e política de privacidade
+          hospedadas aqui.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img
+                class="project-img"
+                src="assets/img/coleta-frai.png"
+                data-i18n-attr="alt:home.projects.coletaFrai.screenshotAlt"
+                alt="Captura de tela do app Coleta Frai"
+                width="320"
+                height="568"
+                onload="this.nextElementSibling.setAttribute('hidden','')"
+                onerror="this.setAttribute('hidden','')"
+              >
+              <div class="img-placeholder project-placeholder">
+                <span data-i18n="home.placeholders.coletaFraiPath">assets/img/coleta-frai.png</span>
+                <small data-i18n="home.placeholders.screenshotHint">Screenshot do app</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="home.projects.coletaFrai.name">Coleta Frai</h3>
+              <p class="project-tag" data-i18n="home.projects.coletaFrai.tag">Utilitário · Ambiente</p>
+              <p data-i18n="home.projects.coletaFrai.description">
+                Conscientização ambiental e coleta seletiva em Fraiburgo/SC:
+                lembretes, cronograma por bairro, pontos de entrega e conteúdo
+                educativo.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=br.edu.ifc.fraiburgo.coletafrai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="common.googlePlay"
+                >Google Play</a>
+                <a href="apps-documentation/coleta-frai/index.html" data-i18n="common.documentation">Documentação</a>
+                <a href="apps-documentation/coleta-frai/privacy-policy.html" data-i18n="common.privacy">Privacidade</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img
+                class="project-img"
+                src="assets/img/slice-heads.png"
+                data-i18n-attr="alt:home.projects.sliceHeads.screenshotAlt"
+                alt="Captura de tela do app Slice Heads"
+                width="320"
+                height="568"
+                onload="this.nextElementSibling.setAttribute('hidden','')"
+                onerror="this.setAttribute('hidden','')"
+              >
+              <div class="img-placeholder project-placeholder">
+                <span data-i18n="home.placeholders.sliceHeadsPath">assets/img/slice-heads.png</span>
+                <small data-i18n="home.placeholders.screenshotHint">Screenshot do app</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="home.projects.sliceHeads.name">Slice Heads</h3>
+              <p class="project-tag" data-i18n="home.projects.sliceHeads.tag">Jogo casual · Android</p>
+              <p data-i18n="home.projects.sliceHeads.description">
+                Corte cabeças com gestos, evite bombas e tente bater seu recorde.
+                Animação em Rive, modo paisagem e integração opcional com Play Games.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.gelsonschikorski.sliceheads"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="common.googlePlay"
+                >Google Play</a>
+                <a href="apps-documentation/sliceheads/index.html" data-i18n="common.documentation">Documentação</a>
+                <a href="apps-documentation/sliceheads/privacy-policy.html" data-i18n="common.privacy">Privacidade</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="container contact-box">
+        <h2 data-i18n="home.contact.title">Contato</h2>
+        <p data-i18n="home.contact.intro">
+          Dúvidas sobre os apps, sugestões ou apenas um oi — pode chamar por
+          e-mail ou redes.
+        </p>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:gelsonschikorski1998@gmail.com">gelsonschikorski1998@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/gelsonmarcelo" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gelson-nascimento-9058201ba" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n-html="common.footerCopyright">© {year} Gelson Marcelo. Site e apps desenvolvidos por mim.</p>
+      <p class="footer-note" data-i18n-html="common.footerDocs">
+        Documentações em
+        <a href="apps-documentation/coleta-frai/index.html">Coleta Frai</a> e
+        <a href="apps-documentation/sliceheads/index.html">Slice Heads</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+</body>
+</html>

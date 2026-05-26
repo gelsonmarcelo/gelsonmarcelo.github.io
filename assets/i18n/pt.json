@@ -1,0 +1,643 @@
+{
+  "common": {
+    "skipLink": "Ir para o conteúdo",
+    "langLabel": "Idioma",
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato",
+      "documentation": "Documentação",
+      "privacy": "Privacidade"
+    },
+    "footerCopyright": "© {year} Gelson Marcelo. Site e apps desenvolvidos por mim.",
+    "footerCopyrightDoc": "© {year} Gelson Marcelo.",
+    "footerDocs": "Documentações em <a href=\"apps-documentation/coleta-frai/index.html\">Coleta Frai</a> e <a href=\"apps-documentation/sliceheads/index.html\">Slice Heads</a>.",
+    "footerDocsColetaFrai": "<a href=\"../../index.html\">Início</a> · <a href=\"privacy-policy.html\">Política de privacidade</a>",
+    "footerDocsColetaFraiPrivacy": "<a href=\"../../index.html\">Início</a> · <a href=\"index.html\">Documentação Coleta Frai</a>",
+    "footerDocsSliceHeads": "<a href=\"../../index.html\">Início</a> · <a href=\"privacy-policy.html\">Política de privacidade</a>",
+    "footerDocsSliceHeadsPrivacy": "<a href=\"../../index.html\">Início</a> · <a href=\"index.html\">Documentação Slice Heads</a>",
+    "docNavAria": "Documentação",
+    "mainNavAria": "Principal",
+    "breadcrumbAria": "Navegação",
+    "googlePlay": "Google Play",
+    "documentation": "Documentação",
+    "privacy": "Privacidade",
+    "openIssue": "Abrir issue",
+    "newDiscussion": "Nova discussão",
+    "newDiscussionIdeas": "Nova discussão (Ideas)",
+    "questions": "Dúvidas",
+    "bugs": "Bugs",
+    "suggestions": "Sugestões",
+    "package": "Pacote",
+    "lastUpdated": "Última atualização",
+    "logo": "Gelson Marcelo",
+    "privacyPolicy": "Política de privacidade",
+    "contactAndFeedback": "Contato e feedback"
+  },
+  "home": {
+    "meta": {
+      "title": "Gelson Marcelo — Desenvolvedor Mobile",
+      "description": "Gelson Marcelo — desenvolvedor mobile. Apps publicados: Coleta Frai e Slice Heads."
+    },
+    "hero": {
+      "eyebrow": "Desenvolvedor mobile",
+      "title": "Olá, sou <span class=\"highlight\">Gelson Marcelo</span>",
+      "lead": "Desenvolvo aplicativos Android. Trabalho com mobile na <strong>Letras</strong> e, no tempo livre, publico apps próprios com foco em experiência simples e útil.",
+      "ctaProjects": "Ver projetos",
+      "ctaContact": "Falar comigo",
+      "avatarAlt": "Foto de Gelson Marcelo"
+    },
+    "about": {
+      "title": "Sobre",
+      "p1": "Formado em Análise e Desenvolvimento de Sistemas pelo Instituto Federal Catarinense, sigo me especializando em desenvolvimento mobile, com foco em Android. Gosto de aprender na prática e transformar ideias em apps publicados na loja.",
+      "p2": "Além dos projetos no trabalho, mantenho produtos próprios — como os apps abaixo — e a documentação deles neste site. Não sou especialista em tudo; prefiro entregar algo claro, estável e que faça sentido para quem usa.",
+      "stackAria": "Áreas e tecnologias",
+      "stack": [
+        "Android",
+        "Kotlin",
+        "Java",
+        "Flutter",
+        "Firebase",
+        "Git"
+      ]
+    },
+    "projects": {
+      "title": "Projetos publicados",
+      "intro": "Dois apps na Google Play, com documentação e política de privacidade hospedadas aqui.",
+      "coletaFrai": {
+        "name": "Coleta Frai",
+        "tag": "Utilitário · Ambiente",
+        "description": "Conscientização ambiental e coleta seletiva em Fraiburgo/SC: lembretes, cronograma por bairro, pontos de entrega e conteúdo educativo.",
+        "screenshotAlt": "Captura de tela do app Coleta Frai"
+      },
+      "sliceHeads": {
+        "name": "Slice Heads",
+        "tag": "Jogo casual · Android",
+        "description": "Corte cabeças com gestos, evite bombas e tente bater seu recorde. Animação em Rive, modo paisagem e integração opcional com Play Games.",
+        "screenshotAlt": "Captura de tela do app Slice Heads"
+      }
+    },
+    "contact": {
+      "title": "Contato",
+      "intro": "Dúvidas sobre os apps, sugestões ou apenas um oi — pode chamar por e-mail ou redes."
+    },
+    "placeholders": {
+      "avatarPath": "assets/img/avatar.jpg",
+      "avatarHint": "Sua foto aqui",
+      "screenshotHint": "Screenshot do app",
+      "coletaFraiPath": "assets/img/coleta-frai.png",
+      "sliceHeadsPath": "assets/img/slice-heads.png"
+    }
+  },
+  "coletaFraiDoc": {
+    "meta": {
+      "title": "Documentação — Coleta Frai",
+      "description": "Documentação do app Coleta Frai — lembretes, cronograma e coleta seletiva em Fraiburgo/SC."
+    },
+    "breadcrumb": {
+      "current": "Coleta Frai — documentação"
+    },
+    "title": "Documentação Coleta Frai ♻️",
+    "googlePlayAlt": "Disponível no Google Play",
+    "intro": "O Coleta Frai tem como objetivo promover a conscientização ambiental e facilitar a coleta seletiva de resíduos no município de Fraiburgo/SC. Nesta documentação, você encontrará informações detalhadas sobre como utilizar todas as funcionalidades do Coleta Frai:",
+    "privacyPolicy": {
+      "heading": "Política de privacidade",
+      "link": "<a href=\"privacy-policy.html\">Acesse a política de privacidade clicando aqui.</a>"
+    },
+    "notice": {
+      "heading": "Aviso",
+      "body": "<strong>Aviso:</strong> Este aplicativo é uma iniciativa privada e não possui vínculo, afiliação ou endosso da Prefeitura de Fraiburgo, da Sanefrai ou de qualquer órgão governamental. As informações apresentadas são de caráter informativo, obtidas a partir de fontes públicas como o site da <a href=\"https://sanefrai.sc.gov.br/\" target=\"_blank\" rel=\"noopener noreferrer\">Sanefrai</a>."
+    },
+    "demo": {
+      "heading": "Demonstração do app",
+      "intro": "O vídeo abaixo apresenta uma visão geral do Coleta Frai em uso — telas, fluxos e recursos do aplicativo. Em alguns trechos aparecem funcionalidades que existiram em versões de desenvolvimento ou protótipo e podem não estar na versão publicada na Google Play.",
+      "videoAria": "Demonstração geral do app Coleta Frai",
+      "fallback": "Seu navegador não suporta a reprodução de vídeo. Você pode <a href=\"../../assets/video/video-coleta-frai.mp4\">baixar o arquivo MP4</a>.",
+      "caption": "Demonstração geral do Coleta Frai."
+    },
+    "features": {
+      "heading": "Funcionalidades"
+    },
+    "lembretes": {
+      "heading": "Lembretes",
+      "body": "A função de programação de lembretes é uma das principais ferramentas do Coleta Frai. É importante lembrar que cada bairro tem seu próprio <a href=\"https://sanefrai.sc.gov.br/coleta\">cronograma de coleta de lixo</a> reciclável e a coleta é realizada em dias específicos e em horários determinados. Programar lembretes ajuda os usuários a lembrarem de colocar o material reciclável no dia e período corretos, garantindo que o material seja coletado e processado adequadamente. É importante enfatizar que o caminhão de coleta só passa no dia e período pré-determinados pelo cronograma em cada bairro, e se o material não estiver no saco reciclável naquele momento, não será recolhido pela Coleta Seletiva e posteriormente pode acabar sendo destinado ao aterro sanitário, o que não é bom para o meio ambiente.",
+      "imgRemindersAlt": "Tela de lembretes",
+      "imgReminderConfigAlt": "Configuração de lembrete"
+    },
+    "cronograma": {
+      "heading": "Cronograma/Roteiro da Coleta Seletiva",
+      "body": "A funcionalidade de escolher o bairro no Coleta Frai é essencial para garantir que os usuários tenham acesso ao cronograma de coleta seletiva correto. Isso ajuda a evitar confusões na hora de descartar o material reciclável, garantindo que o material será coletado no dia correto. Com essa funcionalidade, o usuário pode verificar facilmente quando o caminhão da coleta seletiva passará em seu bairro e se programar para disponibilizar o material reciclável no período certo. Isso é importante, pois o caminhão da coleta seletiva não coleta material em dias fora do cronograma em um dia errado, o que pode fazer com que ele seja descartado no aterro sanitário, prejudicando o meio ambiente. Com o Coleta Frai, os usuários podem fazer a sua parte para ajudar o planeta, contribuindo para uma coleta seletiva mais eficiente e sustentável.",
+      "imgNeighborhoodAlt": "Seleção de bairro",
+      "imgScheduleAlt": "Cronograma de coleta"
+    },
+    "rastreamento": {
+      "heading": "Rastreamento do caminhão",
+      "p1": "Foi desenvolvida e implementada uma funcionalidade de rastreamento do caminhão de coleta seletiva, <strong>funcional em ambiente de uso</strong>, pensada para que os usuários saibam onde o veículo está no momento e se ele já está próximo da residência ou se já passou pelo endereço — ajudando a colocar o material reciclável na rua na hora certa.",
+      "p2": "O recurso depende de um <strong>celular responsável pela emissão da localização do caminhão</strong> (no veículo ou com a equipe de coleta) e dos <strong>demais usuários do app que visualizam essa posição em tempo real</strong> no mapa.",
+      "p3": "Apesar de estar pronta e operante, essa funcionalidade <strong>não foi liberada na versão publicada na Google Play</strong>: a empresa responsável pela coleta decidiu não seguir com o plano, por particularidades e dificuldades internas da operação — não por falha técnica do recurso em si. No <a href=\"#demonstracao-do-app\">vídeo de demonstração do app</a> é possível ver o Coleta Frai em uso, incluindo trechos em que o rastreamento aparece."
+    },
+    "dados": {
+      "heading": "Dados sobre Coleta Seletiva em Fraiburgo/SC",
+      "body": "A funcionalidade que permite aos usuários visualizarem dados sobre coleta seletiva e reciclagem do município em formato de gráficos é uma opção para aqueles que desejam acompanhar a evolução de alguns dados relevantes. É importante lembrar que esses dados podem não estar atualizados, pois dependem da disponibilidade de informações por parte dos órgãos responsáveis. No entanto, a funcionalidade é útil para quem deseja ter uma ideia geral sobre a situação da reciclagem na cidade.",
+      "imgChartsAlt": "Gráficos de coleta seletiva"
+    },
+    "noticias": {
+      "heading": "Portal de notícias",
+      "body": "Uma das funcionalidades do nosso aplicativo Coleta Frai é a possibilidade de visualizar as notícias relacionadas ao meio ambiente e às ações do órgão responsável pela coleta seletiva na cidade de Fraiburgo. Essas notícias são disponibilizadas diretamente pelo site oficial da SANEFRAI (<a href=\"https://www.sanefrai.sc.gov.br/noticias\">https://www.sanefrai.sc.gov.br/noticias</a>), órgão responsável pelo gerenciamento dos resíduos sólidos na cidade.",
+      "imgNewsAlt": "Portal de notícias"
+    },
+    "pontos": {
+      "heading": "Pontos de Entrega Voluntários",
+      "body": "A funcionalidade de ver os pontos de entrega voluntária no Coleta Frai é uma ótima maneira de encontrar locais para descartar seus materiais recicláveis. Através da plataforma, é possível visualizar os pontos de coleta espalhados pela cidade, com informações detalhadas sobre contato, localização e tipos de materiais que são aceitos em cada um deles. Além disso, os usuários podem ter uma visão geral de onde estão localizados esses pontos no mapa, o que facilita a busca pelo ponto mais próximo. É uma forma conveniente e fácil de encontrar lugares onde se pode deixar inclusive os materiais recicláveis que não são coletados pelo caminhão de coleta seletiva.",
+      "imgPointsAlt": "Pontos de entrega voluntários"
+    },
+    "educacional": {
+      "heading": "Conteúdo Educacional",
+      "instrucoes": {
+        "heading": "Instruções sobre a Coleta Seletiva",
+        "body": "O Coleta Frai também conta com um vídeo explicativo da campanha do Saco Verde, que tem como objetivo orientar a população sobre a importância da coleta seletiva e como separar corretamente os materiais recicláveis. Esse recurso pode ser bastante útil para aqueles que ainda têm dúvidas sobre o assunto e desejam contribuir para um mundo mais sustentável."
+      },
+      "lixeiras": {
+        "heading": "Lixeiras recicláveis e suas cores",
+        "body": "No programa Saco Verde, os materiais recicláveis secos podem ficar acomodados juntos no mesmo saco, com exceção do Orgânico, que não é coletado pela coleta seletiva e não deve ser colocado no Saco Verde. O aplicativo Coleta Frai oferece informações sobre as lixeiras recicláveis, suas cores e exemplos de materiais que podem e não podem ser depositados em cada uma delas. Com essa informação, os usuários podem fazer a separação correta dos materiais em suas casas, evitando que materiais recicláveis sejam destinados ao aterro sanitário e contribuindo para o processo de reciclagem. O app ajuda os usuários a entenderem melhor quais materiais são recicláveis e quais não são, ajudando a preservar o meio ambiente e contribuindo para uma cidade mais sustentável."
+      },
+      "razoes": {
+        "heading": "Razões para reciclar e Dicas de Reciclagem",
+        "intro": "A página \"Razões para Reciclar\" e \"Dicas de Reciclagem\" são importantes no aplicativo Coleta Frai porque fornecem informações relevantes e úteis para conscientizar e educar os usuários sobre a importância da reciclagem e como praticá-la de maneira adequada.",
+        "razoesBody": "Na página \"Razões para Reciclar\", os usuários podem encontrar argumentos convincentes sobre como a reciclagem pode ajudar a preservar o meio ambiente, reduzir a quantidade de lixo que vai para os aterros sanitários, economizar recursos naturais, entre outros. Essas informações podem ajudar a motivar as pessoas a adotar práticas mais sustentáveis em suas vidas cotidianas.",
+        "dicasBody": "Já na página \"Dicas de Reciclagem\", os usuários encontram informações úteis para contribuir da melhor forma possível com a coleta seletiva, evitando descartar materiais contaminados e outras dicas que ajudam até a reduzir a quantidade de lixo gerado.",
+        "imgReasonsAlt": "Razões para reciclar",
+        "imgTipsAlt": "Dicas de reciclagem"
+      },
+      "darkTheme": {
+        "heading": "Dark Theme",
+        "body": "Você poderá escolher entre os temas claro e escuro no app!",
+        "imgLightAlt": "Tema claro",
+        "imgDarkAlt": "Tema escuro",
+        "imgToggleAlt": "Alternância de tema"
+      }
+    },
+    "footer": {
+      "questionsHtml": "<strong>Dúvidas:</strong> <a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>",
+      "bugsHtml": "<strong>Bugs:</strong> <a href=\"https://github.com/gelsonmarcelo/apps-documentation/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir issue</a>",
+      "suggestionsHtml": "<strong>Sugestões:</strong> <a href=\"https://github.com/gelsonmarcelo/apps-documentation/discussions/new?category=ideas\" target=\"_blank\" rel=\"noopener noreferrer\">Nova discussão</a>"
+    }
+  },
+  "coletaFraiPrivacy": {
+    "meta": {
+      "title": "Política de privacidade — Coleta Frai",
+      "description": "Política de privacidade e termos de uso do app Coleta Frai."
+    },
+    "breadcrumb": {
+      "app": "Coleta Frai",
+      "current": "Política de privacidade"
+    },
+    "title": "Política de Privacidade e Termos de Uso — Coleta Frai",
+    "lastUpdated": "14 de abril de 2025",
+    "intro1": "Esta política é mantida por <strong>Gelson Marcelo</strong>, desenvolvedor do aplicativo <strong>Coleta Frai</strong>, disponível na Google Play.",
+    "intro2": "Agradecemos por escolher o aplicativo Coleta Frai. Esta política de privacidade e termos de uso (\"Política\") descreve como coletamos, usamos, compartilhamos e protegemos suas informações pessoais ao usar o aplicativo. Ao utilizar o Coleta Frai, você concorda com os termos abaixo. Se não concordar, por favor, não utilize o aplicativo.",
+    "coleta": {
+      "heading": "Coleta de Informações",
+      "p1": "O aplicativo não coleta informações pessoais de identificação como nome, e-mail ou contatos. Podemos coletar informações do dispositivo, como modelo, sistema operacional, versão, endereço IP e identificadores únicos.",
+      "notice": "<strong>Aviso:</strong> não é possível identificar usuários específicos com base nesses dados."
+    },
+    "uso": {
+      "heading": "Uso das Informações",
+      "body": "As informações coletadas são utilizadas para melhorar o funcionamento do aplicativo, personalizar a experiência do usuário, enviar notificações e responder a solicitações de suporte."
+    },
+    "compartilhamento": {
+      "heading": "Compartilhamento de Informações",
+      "body": "Não compartilhamos informações com terceiros, exceto se exigido por lei."
+    },
+    "termos": {
+      "heading": "Termos de Uso",
+      "p1": "O Coleta Frai é um app informativo e não deve ser utilizado como base para decisões importantes.",
+      "p2": "Ao usar o aplicativo, você concorda em não:",
+      "items": [
+        "Violar leis ou regulamentos aplicáveis;",
+        "Compartilhar informações falsas ou enganosas provenientes do app;",
+        "Interferir ou prejudicar o funcionamento do app;",
+        "Transmitir conteúdo prejudicial, ameaçador, abusivo, difamatório ou ilegal."
+      ],
+      "p3": "Reservamos o direito de modificar esta política a qualquer momento, sem aviso prévio. Recomendamos verificar esta página regularmente para acompanhar alterações."
+    },
+    "permissoes": {
+      "heading": "Permissões Declaradas do App",
+      "tableHeaders": {
+        "permission": "Permissão",
+        "details": "Detalhes"
+      },
+      "rows": [
+        {
+          "permission": "android.permission.SCHEDULE_EXACT_ALARM",
+          "details": "Requerida para agendar alarmes exatos em dispositivos com Android 12 (API 31) ou superior. Usada para garantir a pontualidade dos lembretes configurados pelo usuário."
+        },
+        {
+          "permission": "android.permission.USE_EXACT_ALARM",
+          "details": "Necessária para permitir que o aplicativo dispare alarmes exatamente no horário programado. Essencial para a funcionalidade principal do app, que é lembrar o usuário sobre a coleta seletiva em dias e horários específicos."
+        },
+        {
+          "permission": "android.permission.INTERNET",
+          "details": "Requerida para carregar dados atualizados sobre cronogramas, pontos de coleta, notificações e acessar o portal da SANEFRAI."
+        },
+        {
+          "permission": "android.permission.RECEIVE_BOOT_COMPLETED",
+          "details": "Permite que o app redefina alarmes ativos após o dispositivo ser reiniciado."
+        }
+      ]
+    },
+    "contato": {
+      "heading": "Contato",
+      "body": "Em caso de dúvidas ou solicitações relacionadas à privacidade, entre em contato pelo e-mail: <a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>."
+    }
+  },
+  "sliceHeadsDoc": {
+    "meta": {
+      "title": "Documentação — Slice Heads",
+      "description": "Documentação do jogo Slice Heads para Android — regras, Play Games e recursos do app."
+    },
+    "breadcrumb": {
+      "current": "Slice Heads — documentação"
+    },
+    "title": "Documentação Slice Heads",
+    "googlePlayAlt": "Disponível no Google Play",
+    "packageHtml": "<strong>Pacote:</strong> <code>com.gelsonschikorski.sliceheads</code>",
+    "intro": "O <strong>Slice Heads</strong> é um jogo casual para Android em que você corta cabeças com gestos de arrastar, evita bombas e tenta bater seu recorde. A partida usa animação interativa em <strong>Rive</strong> (proporção <strong>16:9</strong>, modo <strong>paisagem</strong>) e pode integrar <strong>Google Play Games</strong> para placar e conquistas.",
+    "intro2": "Nesta documentação você encontra um guia das funcionalidades do app, alinhado ao que está disponível no menu e nas telas in-app.",
+    "img1Alt": "Partida em paisagem — cortando cabeças e pontuação no HUD",
+    "img2Alt": "Partida com bomba no cenário e indicadores de erros no HUD",
+    "privacyPolicy": {
+      "heading": "Política de privacidade",
+      "link": "<a href=\"privacy-policy.html\">Acesse a política de privacidade clicando aqui.</a>"
+    },
+    "notice": {
+      "heading": "Aviso",
+      "body": "Este aplicativo é um jogo independente desenvolvido por <strong>Gelson Schikorski</strong>. Não possui vínculo com a <strong>Rive, Inc.</strong> nem com o autor original da animação do marketplace, além do uso da obra <strong>Heads Will Roll</strong> conforme a licença <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener noreferrer\">CC BY 4.0</a>. A animação base está em: <a href=\"https://rive.app/marketplace/24665-46084-heads-will-roll/\" target=\"_blank\" rel=\"noopener noreferrer\">Heads Will Roll — Rive Marketplace</a>."
+    },
+    "features": {
+      "heading": "Funcionalidades"
+    },
+    "menu": {
+      "heading": "Menu principal",
+      "intro": "No menu você pode:",
+      "items": [
+        "<strong>Jogar</strong> — iniciar uma partida;",
+        "ver a <strong>melhor pontuação</strong> (recorde salvo no aparelho);",
+        "abrir <strong>Configurações</strong> (ajustes de som);",
+        "ler <strong>Como jogar</strong>;",
+        "ver <strong>Créditos</strong> (atribuições do app e da animação);",
+        "abrir a <strong>Política de privacidade</strong> (na WebView);",
+        "entrar no <strong>Google Play Games</strong> (opcional), abrir <strong>Placares</strong> e <strong>Conquistas</strong> quando estiver conectado."
+      ],
+      "outro": "O placar global e as conquistas dependem de login na conta Google via Play Games."
+    },
+    "gameplay": {
+      "heading": "Como jogar (partida)",
+      "p1": "A experiência principal é em <strong>modo paisagem</strong>, pois a animação foi feita para <strong>16:9</strong>. Em celulares, o jogo pode exibir uma mensagem pedindo para girar o aparelho antes de começar.",
+      "rulesHeading": "Regras principais:",
+      "tableHeaders": {
+        "action": "Ação",
+        "effect": "Efeito"
+      },
+      "tableRows": [
+        {
+          "action": "Arrastar sobre as <strong>cabeças</strong>",
+          "effect": "Corta na direção do gesto; pontua"
+        },
+        {
+          "action": "<strong>Errar</strong> uma cabeça (não cortar)",
+          "effect": "Ganha <strong>1 erro</strong>"
+        },
+        {
+          "action": "Cortar ou tocar uma <strong>bomba</strong>",
+          "effect": "<strong>Fim de jogo</strong> imediato"
+        },
+        {
+          "action": "<strong>Pontuação</strong> sobe",
+          "effect": "A dificuldade aumenta (ritmo e desafio)"
+        }
+      ],
+      "pause": "Durante a partida há botão de <strong>pausa</strong>. Ao pausar, a animação e a música de fundo param até você continuar ou voltar ao menu."
+    },
+    "strikes": {
+      "heading": "Erros e créditos «Limpar erros»",
+      "intro": "Quando você perde cabeças, acumula <strong>erros</strong>. É possível, de forma <strong>opcional</strong>:",
+      "steps": [
+        "No <strong>menu de pausa</strong>, assistir a um <strong>vídeo recompensado</strong> (anúncio) para ganhar um <strong>crédito</strong> de limpar erros;",
+        "Durante a partida, tocar no botão <strong>Limpar erros</strong> no HUD (ícone com badge quando há créditos);",
+        "O botão fica <strong>esmaecido</strong> quando não há créditos; com créditos, o badge mostra quantos você pode usar."
+      ],
+      "optional": "Os créditos não são obrigatórios — dá para jogar sem assistir anúncios.",
+      "howToPlayNote": "A tela <strong>Como jogar</strong> no app mostra uma prévia visual desse botão (com e sem crédito)."
+    },
+    "sound": {
+      "heading": "Configurações de som",
+      "intro": "Em <strong>Configurações</strong> (folha inferior no menu) você ajusta:",
+      "items": [
+        "<strong>volume da música</strong> de fundo;",
+        "<strong>silenciar</strong> a música."
+      ],
+      "outro": "A trilha muda conforme o progresso da partida (faixas por faixa de pontuação) e há música específica no <strong>fim de jogo</strong>. A música pausa durante vídeos recompensados e quando o jogo está pausado."
+    },
+    "playGames": {
+      "heading": "Google Play Games",
+      "intro": "Integração <strong>opcional</strong> com o Google Play Games:",
+      "items": [
+        "<strong>Entrar</strong> — login com conta Google;",
+        "<strong>Placares</strong> — envio da melhor pontuação ao placar configurado do jogo;",
+        "<strong>Conquistas</strong> — desbloqueio e progresso de conquistas durante a partida."
+      ],
+      "outro": "Sem login, placar e conquistas do Play Games não ficam disponíveis; a <strong>melhor pontuação local</strong> continua sendo salva no aparelho."
+    },
+    "inAppScreens": {
+      "heading": "Como jogar e Créditos (no app)",
+      "intro": "Telas nativas no aplicativo (não dependem de internet, exceto links tocáveis nos créditos):",
+      "items": [
+        "<strong>Como jogar</strong> — regras detalhadas: gestos, bombas, erros, dificuldade, paisagem e demonstração do botão de limpar erros;",
+        "<strong>Créditos</strong> — agradecimento, informações sobre o desenvolvimento do app Android e atribuição da animação <strong>Heads Will Roll</strong> / <strong>isaganttus</strong> com links para o marketplace Rive e para a licença CC BY 4.0."
+      ]
+    },
+    "privacyInApp": {
+      "heading": "Política de privacidade (no app)",
+      "body": "A política é exibida em <strong>WebView</strong> a partir de uma URL configurada pelo desenvolvedor. Ela deve descrever uso de dados por serviços como <strong>Firebase</strong> (analytics, crashes, desempenho), <strong>Google AdMob</strong> (anúncios) e <strong>Play Games</strong>, conforme a <a href=\"privacy-policy.html\">versão publicada</a>."
+    },
+    "localData": {
+      "heading": "Dados salvos no aparelho",
+      "intro": "Sem criar conta própria do Slice Heads, o app pode guardar localmente:",
+      "items": [
+        "melhor pontuação;",
+        "volume e silêncio da música;",
+        "flags internas de conquistas já processadas."
+      ],
+      "backup": "Com <strong>backup automático do Android</strong> ativo, esses dados podem entrar no backup do sistema, conforme configuração do fabricante."
+    },
+    "requirements": {
+      "heading": "Requisitos e permissões",
+      "items": [
+        "<strong>Android 8.0+</strong> (API 26, <code>minSdk 26</code>);",
+        "permissão de <strong>Internet</strong> (política de privacidade, anúncios, Play Games, Firebase);",
+        "recomendado jogar em <strong>paisagem</strong> em telefones."
+      ]
+    },
+    "animationCredits": {
+      "heading": "Créditos da animação",
+      "body": "A cena de jogo é baseada em <a href=\"https://rive.app/marketplace/24665-46084-heads-will-roll/\">Heads Will Roll</a>, de <strong>isaganttus</strong>, adaptada para o Slice Heads, sob <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International</a>."
+    },
+    "footer": {
+      "heading": "Contato e feedback",
+      "questionsHtml": "<strong>Dúvidas:</strong> <a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>",
+      "bugsHtml": "<strong>Bugs:</strong> <a href=\"https://github.com/gelsonmarcelo/apps-documentation/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Abrir issue</a>",
+      "suggestionsHtml": "<strong>Sugestões:</strong> <a href=\"https://github.com/gelsonmarcelo/apps-documentation/discussions/new?category=ideas\" target=\"_blank\" rel=\"noopener noreferrer\">Nova discussão (Ideas)</a>",
+      "note": "Slice Heads — documentação para usuários · última revisão alinhada ao app v1.0"
+    }
+  },
+  "sliceHeadsPrivacy": {
+    "meta": {
+      "title": "Política de privacidade — Slice Heads",
+      "description": "Política de privacidade do jogo Slice Heads para Android."
+    },
+    "breadcrumb": {
+      "app": "Slice Heads",
+      "current": "Política de privacidade"
+    },
+    "title": "Política de Privacidade — Slice Heads",
+    "lastUpdated": "23 de maio de 2026",
+    "intro1": "Esta Política de Privacidade descreve como o aplicativo móvel <strong>Slice Heads</strong> (“<strong>App</strong>”, “<strong>nós</strong>”) trata informações quando você instala ou usa o App em dispositivos Android distribuídos pela Google Play.",
+    "controller": {
+      "label": "Responsável pelo tratamento:",
+      "name": "Gelson Schikorski",
+      "emailHtml": "<a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>"
+    },
+    "packageHtml": "<strong>Pacote do aplicativo:</strong> <code>com.gelsonschikorski.sliceheads</code>",
+    "consent": "Ao usar o App, você concorda com esta Política. Se não concordar, não utilize o App.",
+    "s1": {
+      "heading": "1. Visão geral",
+      "intro": "O Slice Heads é um jogo casual. Para funcionar, o App pode:",
+      "items": [
+        "armazenar preferências e progresso localmente no seu dispositivo;",
+        "utilizar serviços da Google para análise, desempenho, estabilidade e anúncios;",
+        "exibir anúncios, incluindo vídeos recompensados opcionais;",
+        "conectar-se ao Google Play Games para placares e conquistas, caso você escolha utilizar esses recursos."
+      ],
+      "noSale": "O desenvolvedor não vende dados pessoais.",
+      "thirdParty": "Embora o App não utilize um servidor próprio para cadastro ou armazenamento de contas de usuário, serviços de terceiros integrados ao App — como Google Firebase, Google AdMob e Google Play Games — podem processar determinados dados técnicos e identificadores conforme suas próprias políticas de privacidade."
+    },
+    "s2": {
+      "heading": "2. Dados que coletamos e como os usamos",
+      "s21": {
+        "heading": "2.1 Dados armazenados localmente no dispositivo",
+        "intro": "O App utiliza <strong>Android DataStore (Preferences)</strong> para armazenar informações diretamente no aparelho do usuário, incluindo:",
+        "tableHeaders": {
+          "data": "Dado",
+          "purpose": "Finalidade"
+        },
+        "tableRows": [
+          {
+            "data": "Melhor pontuação (<code>best_score</code>)",
+            "purpose": "Manter o recorde entre sessões"
+          },
+          {
+            "data": "Configurações de áudio",
+            "purpose": "Salvar preferências de volume e silêncio"
+          },
+          {
+            "data": "Indicadores locais de conquistas",
+            "purpose": "Evitar reenvio desnecessário de progresso"
+          }
+        ],
+        "p1": "Esses dados permanecem no dispositivo do usuário e não são enviados para servidores próprios do desenvolvedor.",
+        "p2": "O Android também pode realizar backup automático de dados do App conforme as configurações da sua conta Google e do fabricante do dispositivo.",
+        "legalBasis": "<strong>Base legal (LGPD):</strong> execução do contrato e legítimo interesse para funcionamento adequado do jogo."
+      },
+      "s22": {
+        "heading": "2.2 Google Play Games (opcional)",
+        "p1": "Caso você utilize recursos como login, placares ou conquistas, o App utiliza o serviço Google Play Games.",
+        "p2": "Nessa situação, a Google poderá processar dados associados à sua conta Google, incluindo:",
+        "items": [
+          "identificadores da conta autenticada;",
+          "pontuações enviadas ao placar do jogo;",
+          "progresso de conquistas."
+        ],
+        "purpose": "<strong>Finalidade:</strong> recursos sociais e competitivos do jogo.",
+        "optional": "O uso do Play Games é opcional. Você pode gerenciar dados e permissões diretamente nas configurações da sua conta Google.",
+        "policyLink": "Política da Google: <a href=\"https://policies.google.com/privacy\">https://policies.google.com/privacy</a>"
+      },
+      "s23": {
+        "heading": "2.3 Firebase (Google)",
+        "intro": "O App integra serviços Firebase fornecidos pela Google.",
+        "analytics": {
+          "heading": "Firebase Analytics",
+          "intro": "O App pode registrar eventos de uso, como:",
+          "items": [
+            "início e término de partidas;",
+            "novos recordes;",
+            "interação com anúncios recompensados;",
+            "falhas ou sucesso de login no Play Games."
+          ],
+          "outro": "Esses eventos são utilizados para compreender o uso do App e melhorar a experiência do usuário."
+        },
+        "crashlytics": {
+          "heading": "Firebase Crashlytics",
+          "intro": "Em caso de falhas do App, relatórios técnicos podem ser enviados automaticamente, incluindo:",
+          "items": [
+            "stack traces;",
+            "modelo do dispositivo;",
+            "versão do Android;",
+            "versão do App."
+          ],
+          "purpose": "<strong>Finalidade:</strong> identificação e correção de erros."
+        },
+        "performance": {
+          "heading": "Firebase Performance Monitoring",
+          "body": "O App pode coletar métricas relacionadas ao desempenho e estabilidade da aplicação.",
+          "docLink": "Documentação: <a href=\"https://firebase.google.com/support/privacy\">https://firebase.google.com/support/privacy</a>"
+        }
+      },
+      "s24": {
+        "heading": "2.4 Google AdMob (anúncios)",
+        "p1": "O App utiliza o Google Mobile Ads SDK (AdMob) para exibição de anúncios.",
+        "p2": "Os anúncios podem incluir:",
+        "adTypes": [
+          "banners;",
+          "anúncios recompensados em vídeo exibidos somente quando o usuário escolhe assistir para obter benefícios no jogo."
+        ],
+        "p3": "A Google e seus parceiros de publicidade podem processar determinados dados técnicos, incluindo:",
+        "processedData": [
+          "identificadores de publicidade do dispositivo (Advertising ID / AD_ID);",
+          "endereço IP;",
+          "informações técnicas do dispositivo;",
+          "dados relacionados à interação com anúncios."
+        ],
+        "p4": "Esses dados podem ser utilizados para:",
+        "uses": [
+          "entrega e medição de anúncios;",
+          "prevenção de fraude;",
+          "limitação de frequência;",
+          "personalização de publicidade, conforme aplicável."
+        ],
+        "optOut": "Você pode redefinir ou limitar o identificador de publicidade nas configurações do Android.",
+        "policyLinksLabel": "Políticas relacionadas:",
+        "policyLinks": [
+          "<a href=\"https://policies.google.com/technologies/ads\">https://policies.google.com/technologies/ads</a>",
+          "<a href=\"https://support.google.com/admob/answer/6128543\">https://support.google.com/admob/answer/6128543</a>"
+        ]
+      },
+      "s25": {
+        "heading": "2.5 Dados que não coletamos diretamente",
+        "intro": "O App não solicita acesso a:",
+        "items": [
+          "localização precisa ou aproximada;",
+          "câmera;",
+          "microfone;",
+          "contatos;",
+          "SMS;",
+          "arquivos pessoais do usuário;",
+          "dados financeiros;",
+          "dados de saúde."
+        ],
+        "outro": "O Slice Heads também não possui sistema próprio de cadastro com usuário e senha."
+      }
+    },
+    "s3": {
+      "heading": "3. Compartilhamento com terceiros",
+      "intro": "O App utiliza serviços fornecidos por terceiros para operação e funcionamento, incluindo:",
+      "tableHeaders": {
+        "thirdParty": "Terceiro",
+        "purpose": "Finalidade"
+      },
+      "tableRows": [
+        {
+          "thirdParty": "Google LLC (Firebase, AdMob, Play Games, Play Store)",
+          "purpose": "Analytics, anúncios, estabilidade, recursos sociais e distribuição do App"
+        }
+      ],
+      "noSale": "Não vendemos dados pessoais.",
+      "legal": "Informações poderão ser compartilhadas caso exigido por obrigação legal ou para proteção da segurança, direitos e integridade do App e de seus usuários."
+    },
+    "s4": {
+      "heading": "4. Transferências internacionais",
+      "p1": "Os serviços utilizados pelo App podem processar dados em servidores localizados fora do país do usuário, incluindo os Estados Unidos.",
+      "p2": "Para usuários no Brasil, o tratamento de dados observa a LGPD. Em outras regiões, legislações locais aplicáveis poderão ser observadas pelos respectivos provedores de serviço."
+    },
+    "s5": {
+      "heading": "5. Retenção de dados",
+      "tableHeaders": {
+        "category": "Categoria",
+        "retention": "Retenção"
+      },
+      "tableRows": [
+        {
+          "category": "Dados locais do App",
+          "retention": "Até remoção manual, limpeza de dados ou desinstalação"
+        },
+        {
+          "category": "Dados processados por Google/Firebase/AdMob",
+          "retention": "Conforme políticas da Google"
+        },
+        {
+          "category": "Contatos enviados por e-mail",
+          "retention": "Pelo período necessário para atendimento da solicitação"
+        }
+      ]
+    },
+    "s6": {
+      "heading": "6. Segurança",
+      "intro": "O App utiliza medidas razoáveis para proteção de informações, incluindo:",
+      "items": [
+        "comunicação segura via HTTPS/TLS;",
+        "armazenamento local padrão do Android;",
+        "minimização de dados em eventos analíticos."
+      ],
+      "disclaimer": "Nenhum método de armazenamento ou transmissão é completamente seguro."
+    },
+    "s7": {
+      "heading": "7. Seus direitos",
+      "intro": "Dependendo da legislação aplicável, você poderá solicitar:",
+      "items": [
+        "confirmação da existência de tratamento;",
+        "acesso aos dados;",
+        "correção de informações;",
+        "exclusão de dados;",
+        "revogação de consentimento, quando aplicável."
+      ],
+      "requestsIntro": "Para solicitações relacionadas à privacidade:",
+      "emailLabel": "E-mail:",
+      "emailHtml": "<a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>",
+      "googleManage": "Dados vinculados à conta Google, Play Games ou serviços de anúncios também podem ser gerenciados diretamente pela sua conta Google:",
+      "googleLinks": [
+        "<a href=\"https://myaccount.google.com/data-and-privacy\">https://myaccount.google.com/data-and-privacy</a>",
+        "<a href=\"https://support.google.com/accounts/answer/32050\">https://support.google.com/accounts/answer/32050</a>"
+      ],
+      "localRemovalIntro": "Para remover dados locais do App:",
+      "localRemovalPath": "<strong>Android → Configurações → Apps → Slice Heads → Armazenamento → Limpar dados</strong>"
+    },
+    "s8": {
+      "heading": "8. Crianças e adolescentes",
+      "p1": "O Slice Heads é destinado ao público geral.",
+      "p2": "Não coletamos intencionalmente dados pessoais de crianças menores de 13 anos sem consentimento parental verificável.",
+      "p3": "Caso um responsável legal acredite que uma criança tenha fornecido dados pessoais indevidamente, poderá entrar em contato pelo e-mail informado nesta Política."
+    },
+    "s9": {
+      "heading": "9. Links e conteúdo externo",
+      "body": "Esta Política pode ser disponibilizada dentro do App por meio de uma página web externa. Sites e serviços de terceiros possuem políticas próprias de privacidade."
+    },
+    "s10": {
+      "heading": "10. Alterações nesta Política",
+      "p1": "Esta Política poderá ser atualizada periodicamente para refletir mudanças no App, serviços utilizados ou exigências legais.",
+      "p2": "A versão mais recente será disponibilizada na URL oficial da Política, acompanhada da data de atualização."
+    },
+    "s11": {
+      "heading": "11. Lei aplicável",
+      "body": "Esta Política é regida pelas leis aplicáveis da República Federativa do Brasil, sem prejuízo de direitos previstos pela legislação de proteção de dados aplicável ao usuário."
+    },
+    "s12": {
+      "heading": "12. Contato",
+      "intro": "Dúvidas relacionadas a esta Política:",
+      "name": "Gelson Schikorski",
+      "emailLabel": "E-mail:",
+      "emailHtml": "<a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>",
+      "footerNote": "Slice Heads — Política de Privacidade"
+    }
+  }
+}
