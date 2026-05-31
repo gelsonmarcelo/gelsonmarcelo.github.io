@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confirmação de e-mail — Ponto Maré">
+  <meta name="robots" content="noindex, nofollow">
+  <title>E-mail confirmado — Ponto Maré</title>
+  <link rel="stylesheet" href="email_confirmation.css">
+</head>
+<body>
+  <main class="page">
+    <div class="page-inner">
+      <article class="card">
+        <header class="card-header">
+          <img
+            class="logo"
+            src="../../assets/img/ponto-mare-logo.png"
+            alt="Ponto Maré"
+            width="72"
+            height="72"
+          >
+          <h1 class="brand-title">Ponto Maré</h1>
+          <p class="brand-subtitle">Sistema de ponto de venda</p>
+        </header>
+
+        <div class="card-body">
+          <section id="state-loading" aria-live="polite">
+            <div class="status-icon status-icon--loading" aria-hidden="true">…</div>
+            <h2>Confirmando seu e-mail</h2>
+            <p class="message">Aguarde um instante enquanto validamos sua confirmação.</p>
+          </section>
+
+          <section id="state-success" hidden aria-live="polite">
+            <div class="status-icon status-icon--success" aria-hidden="true">✓</div>
+            <h2>E-mail confirmado</h2>
+            <p class="message">
+              Sua conta no <strong>Ponto Maré</strong> foi confirmada com sucesso.
+              Volte ao aplicativo ou ao sistema e faça login com seu e-mail e senha.
+            </p>
+            <p class="hint">Você já pode fechar esta página.</p>
+          </section>
+
+          <section id="state-error" hidden aria-live="polite">
+            <div class="status-icon status-icon--error" aria-hidden="true">!</div>
+            <h2>Não foi possível confirmar</h2>
+            <p class="message">
+              O link pode ter expirado, já ter sido usado ou estar inválido.
+            </p>
+            <p id="error-detail" class="error-detail" hidden></p>
+            <p class="hint">
+              Solicite um novo e-mail de confirmação no cadastro ou entre em contato com o suporte.
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <p class="footer">© Ponto Maré</p>
+    </div>
+  </main>
+
+  <script src="email_confirmation.js" defer></script>
+</body>
+</html>
