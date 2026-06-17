@@ -8,11 +8,12 @@
       "projects": "Projetos",
       "contact": "Contato",
       "documentation": "Documentação",
-      "privacy": "Privacidade"
+      "privacy": "Privacidade",
+      "terms": "Termos"
     },
     "footerCopyright": "© {year} Gelson Marcelo. Site e apps desenvolvidos por mim.",
     "footerCopyrightDoc": "© {year} Gelson Marcelo.",
-    "footerDocs": "Documentações em <a href=\"apps-documentation/coleta-frai/index.html\">Coleta Frai</a> e <a href=\"apps-documentation/sliceheads/index.html\">Slice Heads</a>.",
+    "footerDocs": "Documentações em <a href=\"apps-documentation/coleta-frai/index.html\">Coleta Frai</a>, <a href=\"apps-documentation/sliceheads/index.html\">Slice Heads</a> e <a href=\"apps-documentation/pontomare/index.html\">Ponto Maré</a>.",
     "footerDocsColetaFrai": "<a href=\"../../index.html\">Início</a> · <a href=\"privacy-policy.html\">Política de privacidade</a>",
     "footerDocsColetaFraiPrivacy": "<a href=\"../../index.html\">Início</a> · <a href=\"index.html\">Documentação Coleta Frai</a>",
     "footerDocsSliceHeads": "<a href=\"../../index.html\">Início</a> · <a href=\"privacy-policy.html\">Política de privacidade</a>",
@@ -639,5 +640,302 @@
       "emailHtml": "<a href=\"mailto:gelsonschikorski1998@gmail.com\">gelsonschikorski1998@gmail.com</a>",
       "footerNote": "Slice Heads — Política de Privacidade"
     }
+  },
+  "pontoMareDoc": {
+    "meta": {
+      "title": "Documentação — Ponto Maré",
+      "description": "Documentação do aplicativo Ponto Maré."
+    },
+    "breadcrumb": {
+      "current": "Ponto Maré — documentação"
+    },
+    "title": "Documentação Ponto Maré",
+    "logoAlt": "Ponto Maré",
+    "intro": "O <strong>Ponto Maré</strong> é um sistema de ponto de venda para lojas, com recursos de cadastro de produtos, controle de estoque, registro de vendas, pagamentos, caixa, impressão de comprovantes e funcionalidades relacionadas à operação comercial.",
+    "privacy": {
+      "heading": "Política de privacidade",
+      "link": "<a href=\"privacy-policy.html\">Acesse a política de privacidade do Ponto Maré.</a>"
+    },
+    "terms": {
+      "heading": "Termos de uso",
+      "link": "<a href=\"terms-of-use.html\">Acesse os termos de uso do Ponto Maré.</a>"
+    },
+    "footerHtml": "<a href=\"../../index.html\">Início</a> · <a href=\"privacy-policy.html\">Política de privacidade</a> · <a href=\"terms-of-use.html\">Termos de uso</a>"
+  },
+  "pontoMarePrivacy": {
+    "meta": {
+      "title": "Política de privacidade — Ponto Maré",
+      "description": "Política de privacidade do aplicativo Ponto Maré."
+    },
+    "breadcrumb": {
+      "app": "Ponto Maré",
+      "current": "Política de privacidade"
+    },
+    "title": "Política de Privacidade — Ponto Maré",
+    "lastUpdated": "17 de junho de 2026",
+    "intro1": "Esta Política de Privacidade descreve como o aplicativo Ponto Maré coleta, usa, armazena, compartilha e protege informações quando você utiliza o aplicativo.",
+    "intro2": "O Ponto Maré é um sistema de ponto de venda para lojas, desenvolvido para auxiliar no cadastro de produtos, controle de estoque, registro de vendas, pagamentos, caixa, impressão de comprovantes e recursos relacionados à operação comercial.",
+    "intro3": "Ao utilizar o Ponto Maré, você concorda com as práticas descritas nesta Política de Privacidade.",
+    "s1": {
+      "heading": "1. Controlador dos dados",
+      "p1": "O Ponto Maré é disponibilizado por Gelson Schikorski.",
+      "p2": "Para dúvidas, solicitações sobre privacidade ou pedidos relacionados aos seus dados pessoais, entre em contato pelo e-mail:"
+    },
+    "s2": {
+      "heading": "2. Informações que podemos coletar",
+      "intro": "O Ponto Maré pode coletar ou armazenar as seguintes informações, de acordo com os recursos utilizados pelo usuário:",
+      "items": [
+        "Informações de conta, como e-mail, identificador de usuário e senha criptografada/gerenciada pelo provedor de autenticação.",
+        "Informações de autenticação e sessão, necessárias para login, segurança da conta e controle de acesso.",
+        "Dados operacionais cadastrados no aplicativo, como produtos, códigos, preços, estoque, cores, vendas, pagamentos, métodos de pagamento, dispositivos/maquininhas, movimentações de caixa, funcionários e informações relacionadas à gestão da loja.",
+        "Dados de assinatura, compras e status de pagamento, quando o usuário utiliza planos, assinaturas ou compras processadas pela Google Play.",
+        "Dados técnicos do dispositivo e do aplicativo, como versão do app, sistema operacional, identificadores técnicos, registros de falhas, eventos de uso e informações necessárias para diagnóstico, segurança e melhoria do serviço.",
+        "Arquivos de backup e restauração, quando o usuário utiliza recursos de backup ou sincronização.",
+        "Informações necessárias para impressão, pareamento ou comunicação com impressoras Bluetooth, USB ou recursos de impressão disponíveis no dispositivo."
+      ],
+      "sensitive": "O aplicativo não tem como objetivo coletar dados sensíveis, como dados de saúde, religião, opinião política, origem racial ou étnica, salvo se o próprio usuário inserir indevidamente esse tipo de informação em campos livres do sistema."
+    },
+    "s3": {
+      "heading": "3. Como usamos as informações",
+      "intro": "As informações coletadas ou armazenadas pelo Ponto Maré são utilizadas para:",
+      "items": [
+        "Criar, autenticar e proteger contas de usuário.",
+        "Permitir o funcionamento dos recursos de ponto de venda, estoque, vendas, caixa, pagamentos e impressão.",
+        "Salvar dados localmente no dispositivo e, quando aplicável, em servidores para backup, sincronização, autenticação ou recursos remotos.",
+        "Validar assinaturas, compras e direitos de acesso por meio da Google Play.",
+        "Melhorar a estabilidade, desempenho, segurança e experiência de uso do aplicativo.",
+        "Identificar e corrigir erros, travamentos e falhas técnicas.",
+        "Cumprir obrigações legais, regulatórias ou solicitações válidas de autoridades competentes, quando aplicável."
+      ]
+    },
+    "s4": {
+      "heading": "4. Armazenamento local no dispositivo",
+      "p1": "Parte dos dados do Ponto Maré é armazenada localmente no dispositivo do usuário, incluindo dados operacionais da loja, como produtos, vendas, caixa, pagamentos e configurações.",
+      "p2": "Esses dados locais permanecem no dispositivo mesmo se a conta online for excluída, salvo quando o próprio sistema operacional ou o usuário remover os dados do aplicativo. Para excluir também os dados locais, o usuário pode desinstalar o aplicativo ou limpar os dados do Ponto Maré nas configurações do sistema operacional do dispositivo.",
+      "p3": "Se o mesmo dispositivo for compartilhado por mais de uma pessoa, outras contas ou usuários com acesso ao dispositivo poderão visualizar dados locais já armazenados no aplicativo."
+    },
+    "s5": {
+      "heading": "5. Serviços de terceiros",
+      "intro": "O Ponto Maré utiliza serviços de terceiros para fornecer, proteger e melhorar suas funcionalidades. Esses serviços podem coletar e processar dados conforme suas próprias políticas de privacidade:",
+      "items": [
+        "Supabase: autenticação, banco de dados, armazenamento, backup e recursos relacionados a conta e dados remotos.",
+        "Firebase/Google: Firebase Analytics, Firebase Crashlytics e Firebase Remote Config, usados para análise de uso, diagnóstico de falhas, configuração remota e melhoria do aplicativo.",
+        "Google Play: processamento, validação e gestão de compras e assinaturas feitas pelo usuário."
+      ],
+      "recommendation": "Recomendamos que você consulte as políticas de privacidade desses serviços para entender como eles tratam dados pessoais.",
+      "linksLabel": "Links úteis:"
+    },
+    "s6": {
+      "heading": "6. Compartilhamento de informações",
+      "noSale": "O Ponto Maré não vende dados pessoais dos usuários.",
+      "intro": "Podemos compartilhar informações apenas nas seguintes situações:",
+      "items": [
+        "Com provedores de tecnologia necessários para funcionamento do app, como Supabase, Firebase/Google e Google Play.",
+        "Quando necessário para autenticação, backup, sincronização, validação de assinaturas, diagnóstico de falhas ou segurança.",
+        "Quando exigido por lei, decisão judicial, solicitação de autoridade competente ou para proteger direitos, segurança e integridade do serviço.",
+        "Com autorização do próprio usuário."
+      ]
+    },
+    "s7": {
+      "heading": "7. Permissões do aplicativo",
+      "intro": "O Ponto Maré pode solicitar permissões do dispositivo para habilitar recursos específicos:",
+      "items": [
+        "Internet: necessária para login, autenticação, backup, configuração remota, assinatura, compras e comunicação com serviços online.",
+        "Bluetooth: necessária para localizar, parear e comunicar com impressoras ou dispositivos compatíveis.",
+        "Localização aproximada ou precisa: em algumas versões do Android, a permissão de localização pode ser necessária para busca e conexão com dispositivos Bluetooth próximos. O Ponto Maré não utiliza essa permissão para rastrear a localização do usuário.",
+        "Arquivos, imagens ou armazenamento: quando disponível, pode ser usado para selecionar, importar, exportar, gerar ou restaurar arquivos relacionados ao funcionamento do aplicativo."
+      ],
+      "manage": "O usuário pode gerenciar permissões nas configurações do sistema operacional. A revogação de permissões pode limitar ou impedir o funcionamento de alguns recursos."
+    },
+    "s8": {
+      "heading": "8. Compras e assinaturas",
+      "p1": "O Ponto Maré pode oferecer assinaturas ou compras processadas pela Google Play.",
+      "p2": "As informações de pagamento são processadas pela Google Play, de acordo com as políticas e termos do Google. O Ponto Maré não armazena dados completos de cartão de crédito ou outros dados financeiros sensíveis do usuário.",
+      "p3": "Podemos armazenar informações relacionadas ao status da assinatura, identificadores de assinatura, período de validade, provedor de pagamento e dados necessários para liberar ou restringir funcionalidades conforme o plano contratado."
+    },
+    "s9": {
+      "heading": "9. Segurança dos dados",
+      "p1": "Adotamos medidas razoáveis de segurança para proteger os dados contra acesso não autorizado, alteração, divulgação ou destruição indevida.",
+      "p2": "Apesar disso, nenhum método de transmissão pela internet ou armazenamento eletrônico é totalmente seguro. Por isso, não é possível garantir segurança absoluta.",
+      "p3": "O usuário também é responsável por manter a segurança do dispositivo, da conta, da senha e do acesso físico ao app."
+    },
+    "s10": {
+      "heading": "10. Retenção e exclusão de dados",
+      "p1": "Mantemos dados pessoais e operacionais pelo tempo necessário para fornecer o serviço, cumprir obrigações legais, resolver disputas, manter segurança, realizar backups ou atender solicitações do usuário.",
+      "p2": "O usuário pode solicitar a exclusão da conta no próprio aplicativo, quando o recurso estiver disponível. A exclusão da conta remove os dados armazenados nos servidores relacionados à conta do usuário, conforme a implementação do serviço e limitações técnicas ou legais aplicáveis.",
+      "p3": "Dados armazenados localmente no dispositivo não são necessariamente removidos pela exclusão da conta online. Para remover dados locais, o usuário deve desinstalar o aplicativo ou limpar os dados do Ponto Maré nas configurações do sistema operacional do dispositivo.",
+      "p4": "Backups, registros técnicos e logs podem ser mantidos por período limitado quando necessário para segurança, prevenção de fraude, diagnóstico de problemas, cumprimento legal ou integridade do serviço."
+    },
+    "s11": {
+      "heading": "11. Direitos do usuário",
+      "intro": "De acordo com a legislação aplicável, incluindo a Lei Geral de Proteção de Dados Pessoais (LGPD), o usuário pode ter direito a:",
+      "items": [
+        "Confirmar a existência de tratamento de dados pessoais.",
+        "Acessar dados pessoais associados à sua conta.",
+        "Solicitar correção de dados incompletos, inexatos ou desatualizados.",
+        "Solicitar exclusão, bloqueio ou anonimização de dados pessoais, quando aplicável.",
+        "Solicitar informações sobre compartilhamento de dados.",
+        "Revogar consentimentos, quando o tratamento depender de consentimento."
+      ],
+      "contact": "Para exercer esses direitos, entre em contato pelo e-mail informado nesta política."
+    },
+    "s12": {
+      "heading": "12. Privacidade de crianças",
+      "p1": "O Ponto Maré é destinado ao uso por lojas, empresas, profissionais e pessoas responsáveis pela operação comercial. O aplicativo não é direcionado a crianças.",
+      "p2": "Não coletamos intencionalmente dados pessoais de crianças. Caso você acredite que uma criança forneceu dados pessoais pelo aplicativo, entre em contato para que possamos avaliar e tomar as providências cabíveis."
+    },
+    "s13": {
+      "heading": "13. Transferência e processamento internacional",
+      "body": "Alguns serviços utilizados pelo Ponto Maré podem processar ou armazenar dados em servidores localizados fora do Brasil. Ao utilizar o aplicativo, você reconhece que seus dados podem ser tratados em outros países, observadas as medidas de proteção aplicáveis e as políticas dos provedores utilizados."
+    },
+    "s14": {
+      "heading": "14. Alterações nesta política",
+      "p1": "Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças no aplicativo, nos serviços utilizados, em requisitos legais ou em práticas de privacidade.",
+      "p2": "Quando houver alterações relevantes, a data de atualização será modificada. Recomendamos que o usuário revise esta política regularmente."
+    },
+    "s15": {
+      "heading": "15. Contato",
+      "intro": "Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento de dados pelo Ponto Maré, entre em contato:",
+      "emailLabel": "E-mail:",
+      "footerNote": "Ponto Maré — Política de Privacidade"
+    },
+    "footerHtml": "<a href=\"../../index.html\">Início</a> · <a href=\"index.html\">Documentação Ponto Maré</a> · <a href=\"terms-of-use.html\">Termos de uso</a>"
+  },
+  "pontoMareTerms": {
+    "meta": {
+      "title": "Termos de uso — Ponto Maré",
+      "description": "Termos de uso do aplicativo Ponto Maré."
+    },
+    "breadcrumb": {
+      "app": "Ponto Maré",
+      "current": "Termos de uso"
+    },
+    "title": "Termos de Uso do Ponto Maré",
+    "lastUpdated": "17 de junho de 2026",
+    "intro1": "Estes Termos de Uso regulam o acesso e a utilização do aplicativo Ponto Maré.",
+    "intro2": "O Ponto Maré é um sistema de ponto de venda para lojas, desenvolvido para auxiliar no cadastro de produtos, controle de estoque, registro de vendas, pagamentos, caixa, impressão de comprovantes e recursos relacionados à operação comercial.",
+    "intro3": "Ao acessar ou utilizar o Ponto Maré, você declara que leu, entendeu e concorda com estes Termos de Uso e com a <a href=\"privacy-policy.html\">Política de Privacidade do Ponto Maré</a>.",
+    "s1": {
+      "heading": "1. Responsável pelo aplicativo",
+      "p1": "O Ponto Maré é disponibilizado por Gelson Schikorski.",
+      "p2": "Para dúvidas, suporte ou solicitações relacionadas a estes Termos de Uso, entre em contato pelo e-mail:"
+    },
+    "s2": {
+      "heading": "2. Aceitação dos termos",
+      "p1": "Ao criar uma conta, acessar, instalar ou utilizar o Ponto Maré, você concorda em cumprir estes Termos de Uso.",
+      "p2": "Se você não concordar com estes termos, não utilize o aplicativo.",
+      "p3": "O uso do aplicativo também está sujeito à Política de Privacidade do Ponto Maré, que explica como os dados são coletados, usados, armazenados e compartilhados."
+    },
+    "s3": {
+      "heading": "3. Licença de uso",
+      "p1": "O Ponto Maré concede ao usuário uma licença limitada, pessoal, revogável, não exclusiva e intransferível para utilizar o aplicativo conforme estes Termos de Uso.",
+      "p2": "O usuário não adquire propriedade sobre o aplicativo, código-fonte, marca, identidade visual, telas, funcionalidades, documentação ou qualquer outro elemento relacionado ao Ponto Maré.",
+      "p3": "É proibido copiar, modificar, distribuir, vender, sublicenciar, alugar, realizar engenharia reversa, descompilar, tentar extrair o código-fonte ou explorar comercialmente o aplicativo sem autorização expressa."
+    },
+    "s4": {
+      "heading": "4. Conta de usuário",
+      "p1": "Algumas funcionalidades do Ponto Maré podem exigir criação de conta e autenticação por e-mail e senha.",
+      "intro": "O usuário é responsável por:",
+      "items": [
+        "Fornecer informações corretas e atualizadas.",
+        "Manter a confidencialidade da senha.",
+        "Proteger o acesso ao dispositivo usado com o aplicativo.",
+        "Informar imediatamente caso identifique uso não autorizado da conta."
+      ],
+      "p2": "Atividades realizadas a partir da conta ou do dispositivo do usuário poderão ser consideradas de responsabilidade do próprio usuário."
+    },
+    "s5": {
+      "heading": "5. Uso permitido",
+      "p1": "O usuário deve utilizar o Ponto Maré apenas para finalidades lícitas e compatíveis com sua proposta de sistema de ponto de venda.",
+      "intro": "É proibido utilizar o aplicativo para:",
+      "items": [
+        "Violar leis, regulamentos ou direitos de terceiros.",
+        "Inserir dados falsos, ilegais, ofensivos ou que violem direitos de terceiros.",
+        "Tentar acessar contas, dados, servidores ou sistemas sem autorização.",
+        "Interferir no funcionamento do aplicativo, dos servidores ou de serviços de terceiros.",
+        "Burlar controles de assinatura, pagamento, acesso ou segurança.",
+        "Usar o aplicativo de forma que possa prejudicar outros usuários, o serviço ou seus provedores."
+      ]
+    },
+    "s6": {
+      "heading": "6. Dados cadastrados pelo usuário",
+      "p1": "O usuário é responsável pelos dados cadastrados no Ponto Maré, incluindo produtos, preços, estoque, vendas, pagamentos, movimentações de caixa, funcionários, dispositivos, configurações e demais informações operacionais da loja.",
+      "p2": "O Ponto Maré é uma ferramenta de apoio à gestão comercial. O usuário é responsável por conferir a correção das informações inseridas, dos registros gerados, dos valores cobrados, dos relatórios, dos comprovantes e de qualquer decisão tomada com base nos dados do aplicativo.",
+      "p3": "O aplicativo não substitui orientação contábil, fiscal, jurídica ou administrativa profissional."
+    },
+    "s7": {
+      "heading": "7. Armazenamento local, backups e restauração",
+      "p1": "Parte dos dados do Ponto Maré pode ser armazenada localmente no dispositivo do usuário.",
+      "p2": "O usuário é responsável por manter o dispositivo em boas condições de uso, proteger o acesso ao aparelho e realizar backups quando o recurso estiver disponível.",
+      "p3": "Recursos de backup, sincronização ou restauração podem depender de internet, autenticação, espaço disponível, serviços de terceiros, disponibilidade de servidores e configurações do aplicativo.",
+      "p4": "Embora sejam adotadas medidas para preservar a integridade dos dados, não é possível garantir que dados locais, backups ou restaurações estarão sempre disponíveis, completos ou livres de falhas.",
+      "p5": "Recomenda-se que o usuário mantenha cópias de segurança e confira regularmente se os dados importantes foram salvos corretamente."
+    },
+    "s8": {
+      "heading": "8. Impressoras, dispositivos e integrações",
+      "p1": "O Ponto Maré pode oferecer recursos de impressão e comunicação com dispositivos como impressoras Bluetooth, USB, impressoras do sistema operacional ou outros equipamentos compatíveis.",
+      "p2": "O funcionamento desses recursos pode depender de permissões do sistema, compatibilidade do equipamento, drivers, pareamento, conexão, bateria, rede, cabos, configurações do dispositivo e bibliotecas de terceiros.",
+      "p3": "O Ponto Maré não garante compatibilidade com todos os modelos de impressoras, maquininhas, dispositivos, versões de sistema operacional ou ambientes de uso."
+    },
+    "s9": {
+      "heading": "9. Assinaturas, pagamentos e compras",
+      "p1": "O Ponto Maré pode oferecer planos, assinaturas, períodos de teste ou compras processadas pela Google Play.",
+      "p2": "Pagamentos, renovações, cancelamentos, reembolsos e meios de pagamento são processados de acordo com as regras da Google Play e da conta Google utilizada pelo usuário.",
+      "p3": "O acesso a funcionalidades pagas pode depender da confirmação da compra, validação da assinatura, conexão com a internet e disponibilidade dos serviços da Google Play.",
+      "p4": "O cancelamento da assinatura deve ser realizado pelo próprio usuário na Google Play, quando aplicável. A desinstalação do aplicativo ou a exclusão da conta no app não cancela automaticamente uma assinatura ativa na Google Play.",
+      "p5": "Quando uma assinatura expira, é cancelada, recusada ou não pode ser validada, o acesso a recursos pagos pode ser limitado, suspenso ou encerrado."
+    },
+    "s10": {
+      "heading": "10. Exclusão de conta e encerramento de uso",
+      "p1": "O usuário pode solicitar ou realizar a exclusão da conta quando o recurso estiver disponível no aplicativo.",
+      "p2": "A exclusão da conta pode remover dados vinculados à conta em servidores, conforme descrito na Política de Privacidade e conforme limitações técnicas ou legais aplicáveis.",
+      "p3": "Dados armazenados localmente no dispositivo podem permanecer disponíveis mesmo após a exclusão da conta online. Para remover dados locais, o usuário deve desinstalar o aplicativo ou limpar os dados do Ponto Maré nas configurações do sistema operacional do dispositivo.",
+      "p4": "A exclusão da conta pode resultar em perda de acesso a assinatura, backups, sincronização, dados remotos e funcionalidades vinculadas à conta."
+    },
+    "s11": {
+      "heading": "11. Disponibilidade do aplicativo",
+      "p1": "Buscamos manter o Ponto Maré disponível e funcionando corretamente, mas não garantimos que o aplicativo estará livre de interrupções, erros, falhas, perdas de dados, incompatibilidades ou indisponibilidades.",
+      "p2": "O acesso ao aplicativo e a algumas funcionalidades pode depender de internet, serviços de terceiros, servidores, Google Play, Supabase, Firebase, sistema operacional, dispositivo utilizado e permissões concedidas pelo usuário.",
+      "p3": "Funcionalidades podem ser modificadas, suspensas, removidas ou atualizadas para correção de erros, melhorias, segurança, manutenção, adequação legal ou evolução do produto."
+    },
+    "s12": {
+      "heading": "12. Limitação de responsabilidade",
+      "p1": "Na máxima extensão permitida pela legislação aplicável, o Ponto Maré e seus responsáveis não serão responsáveis por danos indiretos, incidentais, especiais, punitivos, perda de lucros, perda de receita, perda de dados, interrupção de atividades, falhas operacionais, erros de cadastro, uso indevido do aplicativo, problemas em dispositivos, impressoras, conexões, serviços de terceiros ou decisões tomadas com base nas informações do aplicativo.",
+      "p2": "O usuário reconhece que é responsável por validar as informações registradas, manter backups, conferir valores, proteger seus dispositivos, cumprir obrigações legais e fiscais e utilizar o aplicativo de forma adequada.",
+      "p3": "Nada nestes Termos de Uso exclui direitos que não possam ser limitados pela legislação aplicável."
+    },
+    "s13": {
+      "heading": "13. Propriedade intelectual",
+      "p1": "O Ponto Maré, incluindo nome, marca, código, telas, layout, textos, recursos, funcionalidades, design, documentação e demais elementos do aplicativo, pertence aos seus respectivos titulares e é protegido por leis de propriedade intelectual.",
+      "p2": "O uso do aplicativo não concede ao usuário qualquer direito de propriedade intelectual, exceto a licença limitada de uso prevista nestes Termos."
+    },
+    "s14": {
+      "heading": "14. Suspensão ou encerramento de acesso",
+      "p1": "Podemos suspender, limitar ou encerrar o acesso do usuário ao Ponto Maré caso haja violação destes Termos de Uso, suspeita de fraude, tentativa de burlar pagamentos, uso indevido, risco à segurança, determinação legal ou necessidade técnica.",
+      "p2": "Também podemos encerrar ou alterar funcionalidades, planos, integrações ou versões do aplicativo, respeitados os direitos do usuário conforme a legislação aplicável."
+    },
+    "s15": {
+      "heading": "15. Serviços de terceiros",
+      "p1": "O Ponto Maré pode depender de serviços de terceiros, como Supabase, Firebase/Google, Google Play, bibliotecas de impressão, sistema operacional, lojas de aplicativos e outros provedores.",
+      "p2": "O uso desses serviços pode estar sujeito aos termos, políticas e condições dos respectivos terceiros.",
+      "p3": "Não somos responsáveis por falhas, indisponibilidades, mudanças, cobranças, políticas, decisões, restrições ou tratamentos de dados realizados por serviços de terceiros fora do nosso controle."
+    },
+    "s16": {
+      "heading": "16. Alterações destes termos",
+      "p1": "Estes Termos de Uso podem ser atualizados periodicamente para refletir mudanças no aplicativo, em funcionalidades, em regras comerciais, em requisitos legais ou em práticas operacionais.",
+      "p2": "Quando houver alterações relevantes, a data de atualização será modificada. O uso contínuo do aplicativo após alterações indica concordância com os termos atualizados."
+    },
+    "s17": {
+      "heading": "17. Lei aplicável e resolução de conflitos",
+      "p1": "Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil.",
+      "p2": "Eventuais conflitos deverão ser resolvidos preferencialmente por contato direto pelo e-mail informado nestes Termos. Caso não seja possível uma solução amigável, serão observadas as regras legais aplicáveis."
+    },
+    "s18": {
+      "heading": "18. Contato",
+      "intro": "Em caso de dúvidas sobre estes Termos de Uso, entre em contato:",
+      "emailLabel": "E-mail:",
+      "footerNote": "Ponto Maré — Termos de Uso"
+    },
+    "footerHtml": "<a href=\"../../index.html\">Início</a> · <a href=\"index.html\">Documentação Ponto Maré</a> · <a href=\"privacy-policy.html\">Política de privacidade</a>"
   }
 }

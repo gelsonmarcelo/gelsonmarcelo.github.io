@@ -40,6 +40,7 @@
   }
 
   function format(val) {
+    if (Array.isArray(val)) return val.map(format).join('');
     if (typeof val !== 'string') return val;
     return val.replace(/\{year\}/g, String(new Date().getFullYear()));
   }
@@ -95,7 +96,14 @@
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-html');
       var val = resolve(messages, key);
-      if (val != null) el.innerHTML = format(val);
+      if (!el.hasAttribute('data-i18n-default-html')) {
+        el.setAttribute('data-i18n-default-html', el.innerHTML);
+      }
+      if (val != null) {
+        el.innerHTML = format(val);
+      } else {
+        el.innerHTML = el.getAttribute('data-i18n-default-html');
+      }
     });
 
     document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
