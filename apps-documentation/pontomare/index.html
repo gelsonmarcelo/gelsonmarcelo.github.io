@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-i18n-page="pontoMareDoc">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documentação do aplicativo Ponto Maré.">
+  <title>Documentação — Ponto Maré</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/doc.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo" data-i18n="common.skipLink">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../../index.html" data-i18n="common.logo">Gelson Marcelo</a>
+      <nav class="nav" data-i18n-attr="aria-label:common.docNavAria" aria-label="Documentação">
+        <a href="../../index.html" data-i18n="common.nav.home">Início</a>
+        <a href="index.html" class="is-active" aria-current="page" data-i18n="common.nav.documentation">Documentação</a>
+        <a href="privacy-policy.html" data-i18n="common.nav.privacy">Privacidade</a>
+        <a href="terms-of-use.html" data-i18n="common.nav.terms">Termos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="doc-main">
+    <div class="container">
+      <nav class="doc-breadcrumb" data-i18n-attr="aria-label:common.breadcrumbAria" aria-label="Navegação">
+        <a href="../../index.html" data-i18n="common.nav.home">Início</a>
+        <span class="doc-breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page" data-i18n="pontoMareDoc.breadcrumb.current">Ponto Maré — documentação</span>
+      </nav>
+
+      <article class="doc-content" data-i18n-html="pontoMareDoc.contentHtml">
+        <h1 data-i18n="pontoMareDoc.title">Documentação Ponto Maré</h1>
+        <p class="meta"><strong>Última atualização</strong>: 17 de junho de 2026</p>
+
+        <p class="center">
+          <img src="../../assets/img/ponto-mare-logo.png" data-i18n-attr="alt:pontoMareDoc.logoAlt" alt="Ponto Maré" width="96" height="96">
+        </p>
+
+        <p><strong>Pacote Android:</strong> <code>com.gelsonschikorski.pontomare</code><br>
+        <strong>Versão de referência:</strong> <code>0.1.0+17</code><br>
+        <strong>Contato:</strong> <a href="mailto:gelsonschikorski1998@gmail.com">gelsonschikorski1998@gmail.com</a></p>
+
+        <p>O <strong>Ponto Maré</strong> é um sistema de ponto de venda para lojas. Ele foi desenvolvido para auxiliar no cadastro de produtos, controle de estoque, registro de vendas, controle de caixa, acompanhamento de pagamentos, impressão de cupons e etiquetas, backups e configurações operacionais do estabelecimento.</p>
+
+        <p>Esta documentação apresenta uma visão geral do aplicativo e descreve as principais funcionalidades disponíveis para o usuário.</p>
+
+        <h2>Links importantes</h2>
+        <ul>
+          <li><a href="privacy-policy.html">Política de privacidade</a></li>
+          <li><a href="terms-of-use.html">Termos de uso</a></li>
+          <li><a href="mailto:gelsonschikorski1998@gmail.com">Suporte por e-mail</a></li>
+        </ul>
+
+        <figure class="doc-img-row">
+          <img src="../../assets/img/ponto-mare-logo.png" alt="Ponto Maré">
+          <figcaption>Imagem temporária do Ponto Maré. Substitua por screenshots reais do app quando estiverem disponíveis.</figcaption>
+        </figure>
+
+        <h2>Aviso</h2>
+        <p>O Ponto Maré é um aplicativo independente desenvolvido por <strong>Gelson Schikorski</strong>. Ele não substitui orientação contábil, fiscal, jurídica ou administrativa profissional.</p>
+        <p>O usuário é responsável por conferir os dados cadastrados, valores de produtos, registros de vendas, pagamentos, estoque, caixa, relatórios e comprovantes gerados pelo aplicativo.</p>
+        <p>Parte dos dados pode ser armazenada localmente no dispositivo. Por isso, recomenda-se manter backups atualizados e proteger o acesso ao aparelho.</p>
+
+        <h2>Visão geral do aplicativo</h2>
+        <p>O Ponto Maré organiza as operações da loja em módulos acessados pelo menu lateral:</p>
+        <ul>
+          <li><strong>Caixa:</strong> acompanhamento e registro de entradas e saídas do caixa.</li>
+          <li><strong>Venda:</strong> tela principal do ponto de venda, onde produtos são adicionados e vendas são finalizadas.</li>
+          <li><strong>Vendas:</strong> histórico de vendas, detalhes, impressão de cupom e desfazer venda.</li>
+          <li><strong>Produtos:</strong> cadastro, edição, busca, estoque, preços, custos, cores e impressão de etiquetas.</li>
+          <li><strong>Pagamentos:</strong> listagem e filtro dos pagamentos registrados.</li>
+          <li><strong>Configurações:</strong> formas de pagamento, maquininhas, tema, som, impressão, logo, backup, restauração, assinatura, conta e senha de administrador.</li>
+          <li><strong>Produtos Remotos:</strong> catálogo remoto opcional para criar ou vincular produtos locais e importar quantidades.</li>
+          <li><strong>Logs:</strong> registros técnicos do sistema, protegidos por senha de administrador.</li>
+        </ul>
+
+        <figure class="doc-img-row">
+          <img src="../../assets/img/ponto-mare-logo.png" alt="Visão geral do Ponto Maré">
+          <figcaption>Menu lateral com os principais módulos do sistema.</figcaption>
+        </figure>
+
+        <h2>Conta, login e acesso</h2>
+        <p>Para acessar o Ponto Maré, o usuário utiliza uma conta com <strong>e-mail e senha</strong>.</p>
+        <p>Na tela inicial é possível entrar com uma conta existente, criar uma nova conta, alternar entre login e cadastro, informar e-mail, senha e confirmação de senha, além de visualizar mensagens de erro quando houver falha de autenticação.</p>
+
+        <h2>Assinatura e período de teste</h2>
+        <p>O Ponto Maré possui controle de acesso por assinatura. A assinatura pode ser validada por serviços como Google Play no Android e por fluxo externo em plataformas desktop, conforme a configuração disponível.</p>
+        <p>Quando o usuário possui acesso liberado, o aplicativo abre normalmente. Quando o período de teste termina ou a assinatura não está ativa, o aplicativo exibe uma tela informando que a assinatura é necessária.</p>
+        <p>Na tela de assinatura, o usuário pode visualizar o plano disponível, assinar pelo fluxo de compra, restaurar compras quando disponível e sair da conta. O app também pode exibir um aviso quando o período de teste estiver próximo do fim.</p>
+
+        <h2>Menu e navegação</h2>
+        <p>Depois do login e da validação de acesso, o usuário entra na área principal do aplicativo.</p>
+        <p>O menu pode aparecer como uma barra lateral expandida, uma barra compacta ou uma gaveta, dependendo do tamanho da tela. Isso permite uso em telas maiores, como desktop/tablet, e também em telas menores.</p>
+        <p>O menu também oferece ações rápidas, como fazer backup do banco de dados, sair da conta e navegar entre módulos.</p>
+
+        <h2>Módulo Caixa</h2>
+        <p>O módulo <strong>Caixa</strong> reúne registros financeiros do dia, incluindo entradas manuais, saídas manuais e vendas.</p>
+        <p>Na tela de caixa, o usuário pode visualizar registros, selecionar uma data, avançar ou voltar um dia, limpar o filtro, filtrar vendas por forma de pagamento, cadastrar entradas ou saídas manuais, ver detalhes e excluir registros quando permitido.</p>
+
+        <h3>Registros manuais de caixa</h3>
+        <p>Ao cadastrar ou editar um registro manual, o usuário informa tipo do registro, valor, indicação de entrada ou saída, observação e data/hora quando o registro já existe.</p>
+        <p>Esses registros são úteis para anotar movimentações que não vieram diretamente de uma venda, como reforço de caixa, retirada, despesa, sangria ou ajuste.</p>
+
+        <h3>Horário de alternância do caixa</h3>
+        <p>Nas configurações, o usuário pode definir o <strong>horário de alternância do caixa</strong>. Esse horário determina quando os registros passam a ser considerados como parte do dia seguinte.</p>
+        <p>Por exemplo: se configurado para <code>02:00</code>, ao visualizar o caixa de <code>30/12</code>, o sistema considera registros de <code>02:00</code> do dia <code>30/12</code> até <code>01:59</code> do dia <code>31/12</code>. Esse recurso é útil para lojas que encerram o expediente depois da meia-noite.</p>
+
+        <h2>Módulo Venda</h2>
+        <p>O módulo <strong>Venda</strong> é a tela principal do PDV. Nele, o usuário pode informar ou ler o código de um produto, buscar produtos manualmente, adicionar produtos à venda, visualizar itens, ver detalhes, remover unidades, acompanhar o total em tempo real, excluir a venda em andamento e finalizar a venda.</p>
+
+        <h3>Regras da venda em andamento</h3>
+        <p>A venda em andamento é mantida pelo aplicativo até ser finalizada ou excluída. Isso ajuda a recuperar o fluxo caso o app seja fechado durante uma operação.</p>
+        <p>Produtos sem estoque não podem ser adicionados à venda. Quando uma venda é finalizada, o estoque e os registros financeiros são atualizados conforme os produtos e pagamentos informados.</p>
+
+        <h3>Busca de produtos durante a venda</h3>
+        <p>Quando o operador não sabe o código do produto, pode abrir a busca de produtos para localizar produtos cadastrados e escolher um item para adicionar à venda.</p>
+
+        <h3>Finalização da venda</h3>
+        <p>Ao finalizar uma venda, o app abre o diálogo de pagamento. Nessa etapa, o usuário pode conferir subtotal, desconto, total e valor pago, aplicar desconto, adicionar pagamentos, definir valores, selecionar forma de pagamento, selecionar maquininha quando necessário, informar observações, marcar impressão de cupom e concluir a venda.</p>
+        <p>Quando os pagamentos não cobrem o total da venda, o app exibe um aviso e pede confirmação antes de finalizar com pagamento insuficiente.</p>
+
+        <h2>Módulo Vendas</h2>
+        <p>O módulo <strong>Vendas</strong> apresenta o histórico das vendas registradas. Na listagem, o usuário pode visualizar vendas concluídas, abrir detalhes, editar informações permitidas quando a venda ainda for editável, imprimir cupom e desfazer venda.</p>
+        <p>Ao abrir uma venda, o app mostra os produtos e pagamentos relacionados. Quando a venda ainda pode ser editada, o usuário pode ajustar detalhes permitidos. Quando não pode, a tela funciona como consulta.</p>
+
+        <h2>Módulo Produtos</h2>
+        <p>O módulo <strong>Produtos</strong> é usado para cadastrar, editar, buscar e controlar produtos locais da loja.</p>
+        <p>Na tela de produtos, o usuário pode cadastrar produto local, buscar por texto, mostrar ou ocultar produtos sem estoque, visualizar produtos em tabela, imprimir etiqueta, editar produto e excluir produto com confirmação por senha de administrador.</p>
+
+        <h3>Cadastro e edição de produto</h3>
+        <p>O cadastro de produto possui campos como código, quantidade, nome, preço, custo, observação e cores.</p>
+        <p>O campo de código local não representa necessariamente o código final completo digitado pelo usuário. O usuário informa ou sugere apenas a parte editável do código; o aplicativo monta e valida o código final no padrão <strong>EAN-8</strong>. Quando o produto já existe, o código não pode ser alterado.</p>
+
+        <h3>Código local, EAN-8 e código de barras</h3>
+        <p>O Ponto Maré trabalha com códigos no padrão <strong>EAN-8</strong>, que possui 8 dígitos. Esse formato permite gerar códigos compatíveis com leitura por código de barras em etiquetas.</p>
+        <ul>
+          <li><strong>Primeiro dígito:</strong> indica a faixa do código e ajuda o sistema a diferenciar produtos locais de produtos remotos.</li>
+          <li><strong>Dígitos centrais:</strong> representam a parte numérica do produto que o usuário consegue informar ou sugerir.</li>
+          <li><strong>Último dígito:</strong> é o checksum do EAN-8, calculado automaticamente pelo aplicativo.</li>
+        </ul>
+        <p>Se o usuário deixar o código em branco, o sistema gera automaticamente um código local disponível. Se informar uma parte do código, ela é tratada como sugestão para formar um EAN-8 válido. O último dígito não deve ser informado manualmente.</p>
+
+        <h3>Estoque, preço, custo e cores</h3>
+        <p>O estoque é controlado pela quantidade cadastrada e pelas movimentações realizadas em vendas ou importações. O produto possui preço de venda e custo, e o custo pode ser protegido por senha de administrador para evitar exposição de informações sensíveis.</p>
+        <p>O produto também pode ser associado a cores cadastradas. O seletor de cores permite ver cores existentes, selecionar cores para o produto, criar novas cores e usar seletor visual.</p>
+
+        <h3>Etiquetas</h3>
+        <p>Produtos podem ser impressos em formato de etiqueta. Ao cadastrar um produto novo, o usuário pode marcar a opção de imprimir etiqueta após salvar. Em produtos já cadastrados, a ação de impressão fica disponível no próprio produto.</p>
+
+        <h2>Módulo Pagamentos</h2>
+        <p>O módulo <strong>Pagamentos</strong> lista pagamentos registrados nas vendas. Ele permite filtrar pagamentos por forma de pagamento, maquininha, data inicial e data final.</p>
+        <p>Esses filtros ajudam a conferir valores recebidos por período, por tipo de pagamento e por dispositivo. Ao selecionar um pagamento, o usuário pode abrir a venda relacionada para conferir detalhes.</p>
+
+        <h2>Formas de pagamento</h2>
+        <p>Nas configurações, o usuário pode gerenciar formas de pagamento. O app já cria algumas formas padrão, como Dinheiro, PIX, Débito, Crédito à vista e Crédito parcelado.</p>
+        <p>Cada forma de pagamento pode indicar se exige ou não uma maquininha. O usuário pode selecionar, criar, editar ou deletar formas quando permitido, além de definir a forma de pagamento padrão para novas vendas.</p>
+
+        <h2>Maquininhas e dispositivos</h2>
+        <p>O app permite cadastrar dispositivos ou maquininhas para associar aos pagamentos. Cada dispositivo possui nome, observação e status ativo/inativo.</p>
+        <p>O usuário pode criar, editar ou deletar uma maquininha quando possível, além de definir uma maquininha padrão. Quando uma forma de pagamento exige dispositivo, a seleção de maquininha aparece no fluxo de pagamento.</p>
+
+        <h2>Pagamento padrão</h2>
+        <p>Nas configurações, é possível definir forma de pagamento padrão e maquininha padrão. Essas opções são usadas automaticamente ao finalizar uma venda, facilitando o fluxo quando a loja utiliza sempre a mesma forma de pagamento ou a mesma maquininha.</p>
+
+        <h2>Produtos Remotos</h2>
+        <p>O módulo <strong>Produtos Remotos</strong> é um recurso opcional para trabalhar com um catálogo remoto vinculado à conta do usuário. Essa tela pode ficar oculta quando o recurso estiver desativado na configuração remota do aplicativo.</p>
+        <p>Esse módulo pode ser usado para cadastrar e atualizar produtos remotos, buscar produtos, exibir ou ocultar arquivados e sem estoque, criar produtos locais a partir de produtos remotos, vincular produtos remotos a produtos locais, importar quantidades pendentes, executar ações em lote e arquivar ou restaurar produtos.</p>
+
+        <h3>Diferença entre produto local e produto remoto</h3>
+        <p><strong>Produto local</strong> é armazenado no banco de dados do dispositivo e usado diretamente nas vendas. <strong>Produto remoto</strong> é armazenado em servidor, associado à conta do usuário, e pode servir como fonte para criar produto local, vincular ao produto local ou importar quantidade pendente.</p>
+
+        <h3>Exemplo de uso fora da loja</h3>
+        <p>Um caso comum para produtos remotos é o cadastro fora da loja. O lojista pode cadastrar produtos em outro dispositivo antes de levar a mercadoria para o sistema principal da loja.</p>
+        <ol>
+          <li>O lojista está fora da loja, como em casa, no depósito ou no fornecedor.</li>
+          <li>Ele cadastra os produtos como produtos remotos em um dispositivo secundário.</li>
+          <li>Cada produto remoto já fica com nome, código, preço, custo, observação e quantidade pendente.</li>
+          <li>Quando a mercadoria chega à loja, o usuário abre o Ponto Maré no dispositivo principal.</li>
+          <li>Na tela de Produtos Remotos, importa os produtos para a base local.</li>
+          <li>Depois da importação, os produtos ficam prontos para venda no sistema local da loja.</li>
+        </ol>
+        <p>Esse fluxo ajuda a separar o trabalho de cadastro do atendimento no caixa e reduz a chance de produtos ficarem fisicamente na loja sem cadastro, etiqueta ou preço definido.</p>
+
+        <h3>Ações em lote e assistente de vinculação</h3>
+        <p>Ao selecionar vários produtos remotos, o app pode exibir uma barra de ações em lote. Produtos sem vínculo podem ser criados como produtos locais; produtos vinculados e com quantidade pendente podem ter quantidades importadas; produtos não aplicáveis são ignorados para aquela ação.</p>
+        <p>Quando o app precisa vincular um produto remoto a um produto local, ele pode exibir um assistente para comparar informações e resolver diferenças entre dados remotos e locais, como nome, preço, custo, observação ou código.</p>
+
+        <h2>Impressão</h2>
+        <p>O Ponto Maré possui recursos de impressão para cupons e etiquetas. As configurações permitem escolher método de impressão, impressora, tamanho do papel, tipo de impressão, quantidade, pré-visualização em PDF, medidas da etiqueta, cabeçalho e rodapé do cupom, uso de logo e suporte a fonte tipo B em alguns fluxos ESC/POS.</p>
+
+        <h3>Métodos e tipos de impressão</h3>
+        <p>O app possui suporte a impressão por <strong>Bluetooth</strong>, <strong>USB</strong>, <strong>Sistema (somente PDF)</strong> e <strong>Comando LP (Unix/Linux)</strong>.</p>
+        <p>Os tipos de impressão disponíveis incluem <strong>PDF ESC/POS imagem-bytes</strong>, <strong>Raw ESC/POS bytes</strong> e <strong>Raw TSPL bytes</strong>. O app permite selecionar tamanhos de papel de 58 mm, 72 mm e 80 mm.</p>
+
+        <h3>Cupons e etiquetas</h3>
+        <p>Para cupons de venda, o usuário pode configurar cabeçalho, rodapé, inclusão de logo, impressão após finalizar venda e reimpressão pelo histórico. Para etiquetas, pode configurar largura, altura, intervalo, quantidade e tipo de impressão compatível.</p>
+
+        <h2>Logo da loja</h2>
+        <p>Nas configurações, o usuário pode definir uma logo da loja. A logo pode ser usada na interface e em alguns tipos de impressão, conforme a configuração selecionada. O usuário pode alterar, remover e visualizar a logo configurada.</p>
+
+        <h2>Tema, aparência e feedback sonoro</h2>
+        <p>O app permite escolher o tema visual. Dependendo da configuração disponível, o usuário pode alternar entre tema claro, tema escuro e tema do sistema.</p>
+        <p>O Ponto Maré também pode tocar sons de feedback em operações de sucesso, erro e aviso. Nas configurações, o usuário pode ativar ou desativar esse comportamento.</p>
+
+        <h2>Senha de administrador</h2>
+        <p>Algumas áreas ou ações são protegidas por senha de administrador. No primeiro uso, antes de qualquer configuração personalizada, a senha padrão é <code>admin</code>. Recomenda-se trocar essa senha nas configurações antes de liberar o uso para operadores da loja.</p>
+        <p>A senha pode ser solicitada para excluir produtos, acessar logs, limpar logs, visualizar informações sensíveis como custo de produto e deletar conta.</p>
+
+        <h2>Backups e restauração</h2>
+        <p>O Ponto Maré possui recursos para backup e restauração do banco de dados. Nas configurações, o usuário pode ver e atualizar a data do último backup, fazer backup manualmente, restaurar backup, importar arquivo, otimizar bancos de dados e compartilhar logs com desenvolvedores.</p>
+        <p>O backup manual envia uma cópia dos dados para o armazenamento configurado e reduz o risco de perda de informações em caso de troca de aparelho, falha no dispositivo, exclusão acidental ou reinstalação.</p>
+        <p>Na restauração, recomenda-se conferir se o backup escolhido corresponde à loja e ao período desejado, pois a restauração pode substituir dados locais.</p>
+
+        <h2>Logs do sistema</h2>
+        <p>O módulo <strong>Logs</strong> registra eventos técnicos e ações importantes do aplicativo. O acesso é protegido por senha de administrador.</p>
+        <p>O usuário autorizado pode visualizar logs paginados, filtrar por texto, tipo de log e data, além de limpar logs mediante senha. Tipos de logs incluem erro, aviso, informação, debug e ação.</p>
+
+        <h2>Status da assinatura</h2>
+        <p>Nas configurações, o usuário pode abrir o diálogo de status da assinatura. Essa tela pode mostrar status da assinatura, provedor, data de início, data de expiração, dias restantes e se o acesso ao app está liberado ou bloqueado.</p>
+        <p>Status possíveis incluem período de teste, ativa, expirada e cancelada.</p>
+
+        <h2>Exclusão de conta</h2>
+        <p>O usuário pode acessar a opção <strong>Deletar conta</strong> nas configurações. Antes de abrir a confirmação de exclusão, o app solicita a senha de administrador.</p>
+        <p>A exclusão informa que a ação é permanente, os dados nos servidores e a conta serão removidos, a assinatura ativa pode ser perdida, dados locais podem continuar no dispositivo e, para removê-los, o usuário deve desinstalar o app ou limpar os dados do Ponto Maré no sistema operacional.</p>
+
+        <h2>Dados salvos no dispositivo</h2>
+        <p>O Ponto Maré utiliza banco de dados local para armazenar informações operacionais, como produtos, códigos, cores, preços, custos, vendas, itens vendidos, pagamentos, formas de pagamento, maquininhas, registros de caixa, preferências, configurações de impressão, logo da loja e logs do sistema.</p>
+        <p>Esses dados ficam no dispositivo e podem permanecer mesmo após a exclusão da conta online. Para remover os dados locais, o usuário deve desinstalar o aplicativo ou limpar os dados do Ponto Maré nas configurações do sistema operacional.</p>
+
+        <h2>Dados remotos e serviços online</h2>
+        <p>Alguns recursos dependem de serviços online, como Supabase, Firebase Analytics, Firebase Crashlytics, Firebase Remote Config e Google Play Billing.</p>
+        <p>Os dados operacionais do PDV são principalmente locais. Recursos em nuvem são usados para autenticação, assinatura, backups, produtos remotos e configurações, mas isso não significa que todas as vendas e movimentações locais sejam sincronizadas em tempo real entre dispositivos.</p>
+        <p>Recursos que podem depender de internet incluem login, cadastro, validação de assinatura, compra e restauração de assinatura, produtos remotos, backup remoto, restauração de backup, configurações remotas e envio de logs para suporte.</p>
+
+        <h2>Permissões do Android</h2>
+        <p>No Android, o Ponto Maré pode solicitar permissões como Internet, Bluetooth e Localização aproximada ou precisa. A permissão de localização pode ser necessária para busca de dispositivos Bluetooth próximos, mas o app não usa essa permissão para rastrear localização do usuário.</p>
+        <p>As permissões podem ser gerenciadas nas configurações do sistema operacional.</p>
+
+        <h2>Requisitos e compatibilidade</h2>
+        <p>O Ponto Maré é um aplicativo Flutter com suporte principal para Android e também estrutura para outras plataformas, conforme build e distribuição configurados.</p>
+        <ul>
+          <li><strong>Pacote Android:</strong> <code>com.gelsonschikorski.pontomare</code></li>
+          <li><strong>SDK mínimo:</strong> Android API 26</li>
+          <li><strong>Target SDK:</strong> Android API 35</li>
+        </ul>
+        <p>Compatibilidade com impressoras depende do modelo, método de conexão, permissões, drivers, sistema operacional, papel, comandos suportados e tipo de impressão selecionado.</p>
+
+        <h2>Recomendações de uso</h2>
+        <ol>
+          <li>Cadastre corretamente produtos, preços e custos.</li>
+          <li>Confira o total antes de finalizar vendas.</li>
+          <li>Use formas de pagamento e maquininhas coerentes com a operação real.</li>
+          <li>Faça backups com frequência.</li>
+          <li>Proteja a senha de administrador.</li>
+          <li>Não compartilhe a conta com pessoas não autorizadas.</li>
+          <li>Verifique periodicamente se a impressão está funcionando.</li>
+          <li>Mantenha o aplicativo atualizado.</li>
+          <li>Mantenha o dispositivo protegido com senha ou biometria.</li>
+        </ol>
+
+        <h2>Sugestão de fluxo inicial para uma loja</h2>
+        <ol>
+          <li>Criar conta ou entrar com uma conta existente.</li>
+          <li>Conferir o status da assinatura ou período de teste.</li>
+          <li>Acessar configurações.</li>
+          <li>Cadastrar formas de pagamento.</li>
+          <li>Cadastrar maquininhas/dispositivos.</li>
+          <li>Definir pagamento padrão.</li>
+          <li>Configurar tema e feedback sonoro.</li>
+          <li>Configurar impressão.</li>
+          <li>Inserir logo da loja.</li>
+          <li>Cadastrar produtos.</li>
+          <li>Testar impressão de etiqueta.</li>
+          <li>Fazer uma venda de teste.</li>
+          <li>Testar impressão de cupom.</li>
+          <li>Conferir caixa, vendas e pagamentos.</li>
+          <li>Fazer o primeiro backup.</li>
+        </ol>
+
+        <h2>Política de privacidade e termos</h2>
+        <p>Para informações sobre coleta, uso, armazenamento, compartilhamento e exclusão de dados, consulte a <a href="privacy-policy.html">Política de Privacidade do Ponto Maré</a>.</p>
+        <p>Para regras de uso, responsabilidades do usuário, assinatura, limitações e condições gerais, consulte os <a href="terms-of-use.html">Termos de Uso do Ponto Maré</a>.</p>
+
+        <div class="doc-footer-block">
+          <h2>Contato e feedback</h2>
+          <p><strong>Dúvidas e suporte:</strong> <a href="mailto:gelsonschikorski1998@gmail.com">gelsonschikorski1998@gmail.com</a></p>
+          <p><strong>Bugs:</strong> canal de suporte a definir.</p>
+          <p><strong>Sugestões:</strong> canal de ideias a definir.</p>
+          <p class="doc-footer-note">Ponto Maré - documentação para usuários.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n-html="common.footerCopyrightDoc">© {year} Gelson Marcelo.</p>
+      <p class="footer-note" data-i18n-html="pontoMareDoc.footerHtml">
+        <a href="../../index.html">Início</a> ·
+        <a href="privacy-policy.html">Política de privacidade</a> ·
+        <a href="terms-of-use.html">Termos de uso</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/i18n.js" defer></script>
+</body>
+</html>
