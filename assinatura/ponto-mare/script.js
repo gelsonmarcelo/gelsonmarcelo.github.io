@@ -369,6 +369,15 @@
 
         var redirectUrl = resolveRedirectUrl(result.body);
         if (redirectUrl) {
+          if (result.body.subscription_id) {
+            sessionStorage.setItem("pontomare_mp_preapproval_id", result.body.subscription_id);
+          }
+          if (accessToken) {
+            sessionStorage.setItem("pontomare_mp_access_token", accessToken);
+          }
+          if (userId) {
+            sessionStorage.setItem("pontomare_mp_user_id", userId);
+          }
           window.location.href = redirectUrl;
           return;
         }

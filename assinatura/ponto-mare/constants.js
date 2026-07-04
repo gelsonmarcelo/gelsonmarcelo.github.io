@@ -45,7 +45,8 @@
       privacy: "../../apps-documentation/pontomare/privacy-policy.html"
     },
     subscription: {
-      endpoint: "https://nvfrjjoktlkpuuwxaxqv.supabase.co/functions/v1/create-mercado-pago-checkout"
+      endpoint: "https://nvfrjjoktlkpuuwxaxqv.supabase.co/functions/v1/create-mercado-pago-checkout",
+      syncEndpoint: "https://nvfrjjoktlkpuuwxaxqv.supabase.co/functions/v1/sync-mercado-pago-subscription"
     },
     benefits: [
       "Acesso completo a todos os recursos do sistema",
