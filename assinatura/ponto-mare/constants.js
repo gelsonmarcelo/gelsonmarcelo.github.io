@@ -89,10 +89,11 @@
       }
     ],
     messages: {
-      missingUserId: "Abra esta página pelo app desktop do Ponto Maré para vincular sua assinatura.",
+      missingAuthContext: "Abra esta página pelo app desktop do Ponto Maré para vincular sua assinatura.",
       genericError: "Não foi possível iniciar a assinatura no momento. Tente novamente em instantes.",
       invalidCheckoutResponse: "Resposta inválida do serviço de assinatura.",
-      setupRequired: "Configure a URL da Edge Function antes de publicar esta página."
+      setupRequired: "Configure a URL da Edge Function antes de publicar esta página.",
+      missingPlanConfiguration: "Plano indisponível no momento. Entre em contato com o suporte."
     }
   };
 })();

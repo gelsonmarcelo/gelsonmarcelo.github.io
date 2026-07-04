@@ -28,7 +28,8 @@ Edite o arquivo `constants.js`:
 3. A Edge Function pode retornar:
    - URL de redirecionamento (`subscription_checkout_url`, `subscription_url`, `init_point` ou `redirect_url`), ou
    - status final (`authorized`, `approved` ou `pending`).
-4. O app deve abrir a página com `?user_id=...` para vincular a assinatura.
+4. O app deve abrir a página com `?user_id=...&access_token=...` (JWT do Supabase) para vincular a assinatura.
+5. A landing envia `Authorization: Bearer <access_token>` para a Edge Function e usa o `preapprovalPlanId` como `plan_id` no payload.
 
 ## Links úteis
 

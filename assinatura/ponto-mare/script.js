@@ -15,6 +15,7 @@
 
   var params = new URLSearchParams(window.location.search);
   var userId = params.get("user_id");
+  var accessToken = params.get("access_token");
 
   function textOrEmpty(value) {
     return value || "";
@@ -177,14 +178,19 @@
     formError.textContent = "";
   }
 
-  function returnUrls() {
-    var base = window.location.origin + "/assinatura/ponto-mare";
-    var userQuery = userId ? "?user_id=" + encodeURIComponent(userId) : "";
-    return {
-      success_url: base + "/sucesso.html" + userQuery,
-      failure_url: base + "/erro.html" + userQuery,
-      pending_url: base + "/pendente.html" + userQuery
-    };
+  function hasAuthContext() {
+    return Boolean(userId && accessToken);
+  }
+
+  function resolvePreapprovalPlanId(planId) {
+    if (planId === config.pricing.yearly.planId) {
+      return config.pricing.yearly.preapprovalPlanId;
+    }
+    return config.pricing.monthly.preapprovalPlanId;
+  }
+
+  function isConfiguredPlanId(planId) {
+    return Boolean(planId) && planId.indexOf("YOUR_") !== 0;
   }
 
   function resolveRedirectUrl(body) {
@@ -230,8 +236,8 @@
     input.addEventListener("change", refreshPlanSelection);
   });
 
-  if (!userId) {
-    showWarning(config.messages.missingUserId);
+  if (!hasAuthContext()) {
+    showWarning(config.messages.missingAuthContext);
     subscribeButton.disabled = true;
   } else {
     hideWarnings();
@@ -241,8 +247,8 @@
     event.preventDefault();
     hideError();
 
-    if (!userId) {
-      showWarning(config.messages.missingUserId);
+    if (!hasAuthContext()) {
+      showWarning(config.messages.missingAuthContext);
       return;
     }
 
@@ -258,21 +264,26 @@
       return;
     }
 
+    var preapprovalPlanId = resolvePreapprovalPlanId(planId);
+    if (!isConfiguredPlanId(preapprovalPlanId)) {
+      showError(config.messages.missingPlanConfiguration);
+      return;
+    }
+
     setLoading(true);
 
     var payload = {
-      user_id: userId,
-      plan_id: planId,
-      preapproval_plan_id: planId === config.pricing.yearly.planId
-        ? config.pricing.yearly.preapprovalPlanId
-        : config.pricing.monthly.preapprovalPlanId,
-      return_urls: returnUrls()
+      plan_id: preapprovalPlanId,
+      description: config.brand.name + " - " + (planId === config.pricing.yearly.planId
+        ? config.pricing.yearly.name
+        : config.pricing.monthly.name)
     };
 
     fetch(endpoint, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + accessToken
       },
       body: JSON.stringify(payload)
     })
