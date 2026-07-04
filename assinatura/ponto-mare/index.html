@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ponto Maré Premium | Assinatura para gestão de loja</title>
+  <meta
+    name="description"
+    content="Assine o Ponto Maré Premium e tenha acesso completo para vender com mais agilidade, controlar estoque e gerenciar sua loja no Android e Windows."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/assinatura/ponto-mare/" aria-label="Página de assinatura Ponto Maré Premium">
+        <img id="brand-logo" src="../../assets/img/ponto-mare-logo.png" alt="Logo Ponto Maré" width="44" height="44">
+        <div>
+          <strong id="brand-name">Ponto Maré Premium</strong>
+          <p id="brand-tagline">Sistema de ponto de venda para lojas</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Produtividade para o seu negócio</p>
+          <h1>Venda mais rápido e gerencie sua loja com controle total</h1>
+          <p>
+            Assine o Ponto Maré Premium para liberar o acesso completo aos recursos do sistema
+            e manter sua operação organizada no desktop e no Android.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#planos" id="hero-subscribe-link">Assinar agora</a>
+            <a class="btn btn-secondary" href="#planos">Ver planos</a>
+          </div>
+          <p id="hero-warning" class="notice warning" hidden aria-live="polite"></p>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumo de valor">
+          <h2>O que você libera com o Premium</h2>
+          <ul id="hero-benefits-list" class="check-list"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="beneficios-title">
+      <div class="container">
+        <h2 id="beneficios-title" class="section-title">Benefícios para acelerar sua operação</h2>
+        <div id="benefits-grid" class="benefits-grid"></div>
+      </div>
+    </section>
+
+    <section id="planos" class="section" aria-labelledby="planos-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="planos-title" class="section-title">Escolha o plano ideal</h2>
+          <p>Você pode começar mensalmente ou garantir economia no anual.</p>
+        </div>
+
+        <form id="subscription-form" novalidate>
+          <div class="plans-grid" role="radiogroup" aria-label="Seleção de plano">
+            <label class="plan-card" for="plan-monthly">
+              <input type="radio" id="plan-monthly" name="plan_id" value="monthly_plan" checked>
+              <p class="plan-name" id="monthly-name">Plano Mensal</p>
+              <p class="plan-price">
+                <span id="monthly-price">R$ 29,90</span>
+                <span id="monthly-period" class="price-period">/mês</span>
+              </p>
+              <p class="plan-description" id="monthly-description"></p>
+              <ul class="plan-list">
+                <li>Acesso completo aos recursos</li>
+                <li>Atualizações contínuas do sistema</li>
+                <li>Suporte para sua operação</li>
+              </ul>
+              <span class="plan-action">Assinar</span>
+            </label>
+
+            <label class="plan-card featured" for="plan-yearly">
+              <input type="radio" id="plan-yearly" name="plan_id" value="yearly_plan">
+              <span class="badge" id="yearly-badge">Melhor valor</span>
+              <p class="plan-name" id="yearly-name">Plano Anual</p>
+              <p class="plan-price">
+                <span id="yearly-price">R$ 199,90</span>
+                <span id="yearly-period" class="price-period">/ano</span>
+              </p>
+              <p class="plan-description" id="yearly-description"></p>
+              <ul class="plan-list">
+                <li>Acesso completo durante todo o ano</li>
+                <li>Melhor custo-benefício no período</li>
+                <li>Suporte para escala da sua loja</li>
+              </ul>
+              <span class="plan-action">Assinar</span>
+            </label>
+          </div>
+
+          <p id="form-warning" class="notice warning" hidden aria-live="polite"></p>
+          <p id="form-error" class="notice error" hidden aria-live="polite"></p>
+
+          <button id="subscribe-button" type="submit" class="btn btn-primary btn-cta">
+            Assinar agora
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="confianca-title">
+      <div class="container">
+        <h2 id="confianca-title" class="section-title">Confiança para assinar com tranquilidade</h2>
+        <div id="trust-grid" class="trust-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container faq">
+        <h2 id="faq-title" class="section-title">Perguntas frequentes</h2>
+        <div id="faq-list" class="faq-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footer-brand">Ponto Maré Premium. Todos os direitos reservados.</p>
+      <nav aria-label="Links legais">
+        <a id="footer-terms" href="../../apps-documentation/pontomare/terms-of-use.html">Termos de uso</a>
+        <a id="footer-privacy" href="../../apps-documentation/pontomare/privacy-policy.html">Privacidade</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="constants.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
