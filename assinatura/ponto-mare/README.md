@@ -24,12 +24,12 @@ Edite o arquivo `constants.js`:
 ## Como configurar assinatura
 
 1. No `constants.js`, altere `subscription.endpoint` para a URL real da Edge Function Supabase.
-2. Configure os `preapprovalPlanId` de mensal e anual com os IDs reais dos planos de assinatura no Mercado Pago.
+2. Configure a recorrência de cada plano em `pricing.monthly.recurring` e `pricing.yearly.recurring`.
 3. A Edge Function pode retornar:
    - URL de redirecionamento (`subscription_checkout_url`, `subscription_url`, `init_point` ou `redirect_url`), ou
    - status final (`authorized`, `approved` ou `pending`).
 4. O app deve abrir a página com `?user_id=...&access_token=...` (JWT do Supabase) para vincular a assinatura.
-5. A landing envia `Authorization: Bearer <access_token>` para a Edge Function e usa o `preapprovalPlanId` como `plan_id` no payload.
+5. A landing envia `Authorization: Bearer <access_token>` para a Edge Function e envia `plan_id` + `auto_recurring` no payload.
 
 ## Links úteis
 

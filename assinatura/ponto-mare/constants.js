@@ -9,20 +9,30 @@
     pricing: {
       monthly: {
         planId: "monthly_plan",
-        preapprovalPlanId: "c22f4f39a9b940bbad032c04b6958eef",
         name: "Plano Mensal",
         priceLabel: "R$ 29,90",
         pricePeriod: "/mês",
-        shortDescription: "Mais flexibilidade para o dia a dia da sua loja."
+        shortDescription: "Mais flexibilidade para o dia a dia da sua loja.",
+        recurring: {
+          frequency: 1,
+          frequencyType: "months",
+          transactionAmount: 29.90,
+          currencyId: "BRL"
+        }
       },
       yearly: {
         planId: "yearly_plan",
-        preapprovalPlanId: "YOUR_YEARLY_PREAPPROVAL_PLAN_ID",
         name: "Plano Anual",
         badge: "Melhor valor",
         priceLabel: "R$ 199,90",
         pricePeriod: "/ano",
-        shortDescription: "Melhor custo-benefício para crescer com previsibilidade."
+        shortDescription: "Melhor custo-benefício para crescer com previsibilidade.",
+        recurring: {
+          frequency: 12,
+          frequencyType: "months",
+          transactionAmount: 199.90,
+          currencyId: "BRL"
+        }
       }
     },
     cta: {
@@ -93,7 +103,7 @@
       genericError: "Não foi possível iniciar a assinatura no momento. Tente novamente em instantes.",
       invalidCheckoutResponse: "Resposta inválida do serviço de assinatura.",
       setupRequired: "Configure a URL da Edge Function antes de publicar esta página.",
-      missingPlanConfiguration: "Plano indisponível no momento. Entre em contato com o suporte."
+      invalidRecurringConfiguration: "Configuração de cobrança recorrente inválida para o plano selecionado."
     }
   };
 })();

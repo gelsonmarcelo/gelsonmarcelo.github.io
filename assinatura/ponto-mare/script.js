@@ -182,15 +182,40 @@
     return Boolean(userId && accessToken);
   }
 
-  function resolvePreapprovalPlanId(planId) {
+  function resolvePlanConfig(planId) {
     if (planId === config.pricing.yearly.planId) {
-      return config.pricing.yearly.preapprovalPlanId;
+      return config.pricing.yearly;
     }
-    return config.pricing.monthly.preapprovalPlanId;
+    return config.pricing.monthly;
   }
 
-  function isConfiguredPlanId(planId) {
-    return Boolean(planId) && planId.indexOf("YOUR_") !== 0;
+  function buildAutoRecurringPayload(planConfig) {
+    var recurring = planConfig && planConfig.recurring;
+    if (!recurring) {
+      return null;
+    }
+
+    var frequency = Number(recurring.frequency);
+    var transactionAmount = Number(recurring.transactionAmount);
+    var frequencyType = String(recurring.frequencyType || "").trim();
+    var currencyId = String(recurring.currencyId || "").trim();
+
+    if (!Number.isInteger(frequency) || frequency <= 0) {
+      return null;
+    }
+    if (!Number.isFinite(transactionAmount) || transactionAmount <= 0) {
+      return null;
+    }
+    if (!frequencyType || !currencyId) {
+      return null;
+    }
+
+    return {
+      frequency: frequency,
+      frequency_type: frequencyType,
+      transaction_amount: transactionAmount,
+      currency_id: currencyId
+    };
   }
 
   function resolveRedirectUrl(body) {
@@ -294,19 +319,21 @@
       return;
     }
 
-    var preapprovalPlanId = resolvePreapprovalPlanId(planId);
-    if (!isConfiguredPlanId(preapprovalPlanId)) {
-      showError(config.messages.missingPlanConfiguration);
+    var planConfig = resolvePlanConfig(planId);
+    var autoRecurring = buildAutoRecurringPayload(planConfig);
+    if (!autoRecurring) {
+      showError(config.messages.invalidRecurringConfiguration);
       return;
     }
 
     setLoading(true);
 
     var payload = {
-      plan_id: preapprovalPlanId,
+      plan_id: planId,
       description: config.brand.name + " - " + (planId === config.pricing.yearly.planId
         ? config.pricing.yearly.name
-        : config.pricing.monthly.name)
+        : config.pricing.monthly.name),
+      auto_recurring: autoRecurring
     };
 
     fetch(endpoint, {
