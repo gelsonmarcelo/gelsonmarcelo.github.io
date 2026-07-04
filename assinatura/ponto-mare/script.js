@@ -201,6 +201,36 @@
       "";
   }
 
+  function extractMercadoPagoError(body) {
+    if (!body || typeof body !== "object") {
+      return "";
+    }
+
+    if (typeof body.message === "string" && body.message) {
+      return body.message;
+    }
+
+    var details = body.details;
+    if (details && typeof details === "object") {
+      if (typeof details.message === "string" && details.message) {
+        return details.message;
+      }
+      if (Array.isArray(details.cause)) {
+        var firstCause = details.cause.find(function (causeItem) {
+          return causeItem && typeof causeItem.description === "string" && causeItem.description;
+        });
+        if (firstCause) {
+          return firstCause.description;
+        }
+      }
+      if (typeof details.error === "string" && details.error) {
+        return details.error;
+      }
+    }
+
+    return "";
+  }
+
   function hydrateStaticContent() {
     setText("brand-name", config.brand.name);
     setText("brand-tagline", config.brand.tagline);
@@ -301,7 +331,13 @@
       })
       .then(function (result) {
         if (!result.ok) {
-          throw new Error(result.body.error || result.body.message || config.messages.genericError);
+          var mercadoPagoError = extractMercadoPagoError(result.body);
+          throw new Error(
+            mercadoPagoError ||
+            result.body.message ||
+            result.body.error ||
+            config.messages.genericError
+          );
         }
 
         var redirectUrl = resolveRedirectUrl(result.body);
