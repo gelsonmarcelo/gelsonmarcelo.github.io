@@ -65,6 +65,8 @@
         sessionStorage.removeItem("pontomare_mp_access_token");
         sessionStorage.removeItem("pontomare_mp_user_id");
         setDebug("Assinatura sincronizada (status: " + (result.body.status || "?") + ").");
+      } else if (result.body && result.body.pending) {
+        setDebug("Pagamento recebido. Aguardando confirmação do Mercado Pago — o acesso é liberado automaticamente em instantes.");
       } else {
         var detail = result.body && (result.body.message || result.body.error)
           ? (result.body.message || result.body.error)
