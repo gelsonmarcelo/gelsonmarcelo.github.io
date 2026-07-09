@@ -167,16 +167,41 @@ a {
   color: var(--pm-text);
 }
 
-.icon-pill {
-  width: 1.35rem;
-  height: 1.35rem;
-  border-radius: 50%;
+.icon-pill,
+.feature-icon,
+.trust-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 12px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   color: var(--pm-primary);
-  background: #eff6ff;
+  background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+}
+
+.icon-pill {
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+}
+
+.feature-icon svg,
+.trust-icon svg,
+.icon-pill svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-pill svg {
+  width: 0.85rem;
+  height: 0.85rem;
 }
 
 .section-title {
@@ -260,10 +285,6 @@ a {
   box-shadow: 0 10px 24px rgba(0, 155, 245, 0.2);
 }
 
-.plan-card.featured {
-  border-color: rgba(0, 155, 245, 0.38);
-}
-
 .badge {
   display: inline-flex;
   align-items: center;
@@ -320,13 +341,6 @@ a {
   margin-right: 0.4rem;
 }
 
-.plan-action {
-  margin-top: 0.9rem;
-  display: inline-flex;
-  color: var(--pm-primary);
-  font-weight: 600;
-}
-
 .btn {
   border: 1px solid transparent;
   border-radius: 12px;
@@ -376,6 +390,10 @@ a {
   border-radius: 12px;
   padding: 0.65rem 0.8rem;
   font-size: 0.92rem;
+}
+
+.hero-ctas + .hero-warning {
+  margin-top: 1.5rem;
 }
 
 .warning {

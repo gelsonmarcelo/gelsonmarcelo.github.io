@@ -13,9 +13,44 @@
   var formWarning = document.getElementById("form-warning");
   var formError = document.getElementById("form-error");
 
+  function normalizedHashParams() {
+    var hash = window.location.hash || "";
+    if (hash.indexOf("#") === 0) {
+      hash = hash.slice(1);
+    }
+    return new URLSearchParams(hash);
+  }
+
+  function persistAuthContext(nextUserId, nextAccessToken) {
+    if (nextUserId) {
+      sessionStorage.setItem("pontomare_mp_user_id", nextUserId);
+    }
+    if (nextAccessToken) {
+      sessionStorage.setItem("pontomare_mp_access_token", nextAccessToken);
+    }
+  }
+
+  function sanitizeVisibleUrl() {
+    if (!window.history || typeof window.history.replaceState !== "function") {
+      return;
+    }
+    var sanitizedParams = new URLSearchParams(window.location.search);
+    sanitizedParams.delete("access_token");
+    sanitizedParams.delete("user_id");
+    sanitizedParams.delete("preapproval_id");
+    sanitizedParams.delete("id");
+    var queryString = sanitizedParams.toString();
+    var cleanUrl = window.location.pathname + (queryString ? "?" + queryString : "");
+    window.history.replaceState(null, document.title, cleanUrl);
+  }
+
   var params = new URLSearchParams(window.location.search);
-  var userId = params.get("user_id");
-  var accessToken = params.get("access_token");
+  var hashParams = normalizedHashParams();
+  var userId = hashParams.get("user_id") || params.get("user_id") || sessionStorage.getItem("pontomare_mp_user_id");
+  var accessToken = hashParams.get("access_token") || params.get("access_token") || sessionStorage.getItem("pontomare_mp_access_token");
+
+  persistAuthContext(userId, accessToken);
+  sanitizeVisibleUrl();
 
   function textOrEmpty(value) {
     return value || "";
@@ -35,12 +70,41 @@
     }
   }
 
-  function buildIcon(iconSymbol) {
-    var icon = document.createElement("span");
-    icon.className = "icon-pill";
-    icon.textContent = iconSymbol;
-    icon.setAttribute("aria-hidden", "true");
-    return icon;
+  var SVG_NS = "http://www.w3.org/2000/svg";
+
+  var ICON_PATHS = {
+    sale: "M6 6h15l-1.5 9h-12z M6 6l-2-2 M9 20a1 1 0 100-2 1 1 0 000 2zm9 0a1 1 0 100-2 1 1 0 000 2z",
+    payment: "M3 7h18v10H3z M3 10h18 M7 15h3",
+    inventory: "M4 7l8-4 8 4-8 4-8-4z M4 7v10l8 4 8-4V7 M12 11v10",
+    cash: "M4 6h16v12H4z M8 10h8 M8 14h5",
+    remote: "M7 8h10v8H7z M12 16v4 M9 20h6 M4 12H2 M22 12h-2",
+    print: "M7 8h10v3H7z M6 11h12v8H6z M9 15h6",
+    backup: "M12 3v10 M8 7l4-4 4 4 M5 14v4a3 3 0 003 3h8a3 3 0 003-3v-4",
+    devices: "M8 5h8v12H8z M10 19h4 M5 8H3 M21 8h-2",
+    shield: "M12 3l8 4v6c0 5-3.5 8-8 8s-8-3-8-8V7l8-4z",
+    clock: "M12 8v5l3 2 M12 21a9 9 0 110-18 9 9 0 010 18z",
+    sync: "M20 7h-4V3 M4 17h4v4 M20 7a8 8 0 00-13 3 M4 17a8 8 0 0013-3",
+    support: "M4 6a8 8 0 0116 0v4a4 4 0 01-4 4h-1l-2 3v-3H9a4 4 0 01-4-4V6z",
+    check: "M5 12l4 4L19 6"
+  };
+
+  function buildSvgIcon(iconName, className) {
+    var wrapper = document.createElement("span");
+    wrapper.className = className;
+    wrapper.setAttribute("aria-hidden", "true");
+
+    var svg = document.createElementNS(SVG_NS, "svg");
+    svg.setAttribute("viewBox", "0 0 24 24");
+
+    var path = document.createElementNS(SVG_NS, "path");
+    path.setAttribute("d", ICON_PATHS[iconName] || ICON_PATHS.shield);
+    svg.appendChild(path);
+    wrapper.appendChild(svg);
+    return wrapper;
+  }
+
+  function buildCheckIcon() {
+    return buildSvgIcon("check", "icon-pill");
   }
 
   function renderHeroBenefits() {
@@ -49,10 +113,10 @@
       return;
     }
 
-    var preview = config.benefits.slice(0, 4);
+    var preview = (config.hero && config.hero.previewBenefits) || [];
     preview.forEach(function (benefit) {
       var li = document.createElement("li");
-      li.appendChild(buildIcon("✓"));
+      li.appendChild(buildCheckIcon());
       li.appendChild(document.createTextNode(benefit));
       list.appendChild(li);
     });
@@ -64,18 +128,16 @@
       return;
     }
 
-    var icons = ["✓", "⚡", "▦", "✓", "▣"];
-
-    config.benefits.forEach(function (benefit, index) {
+    config.benefits.forEach(function (benefit) {
       var card = document.createElement("article");
       card.className = "feature-card";
 
-      var icon = buildIcon(icons[index] || "✓");
+      var icon = buildSvgIcon(benefit.icon || "sale", "feature-icon");
       var title = document.createElement("h3");
-      title.textContent = benefit;
+      title.textContent = benefit.title;
 
       var description = document.createElement("p");
-      description.textContent = "Recurso incluso para aumentar produtividade e controle da operação.";
+      description.textContent = benefit.description;
 
       card.appendChild(icon);
       card.appendChild(title);
@@ -90,13 +152,11 @@
       return;
     }
 
-    var icons = ["🛡", "✓", "↺", "☎", "▣"];
-
-    config.trustBlocks.forEach(function (item, index) {
+    config.trustBlocks.forEach(function (item) {
       var card = document.createElement("article");
       card.className = "trust-card";
 
-      var icon = buildIcon(icons[index] || "✓");
+      var icon = buildSvgIcon(item.icon || "shield", "trust-icon");
       var title = document.createElement("h3");
       title.textContent = item.title;
 
@@ -107,6 +167,20 @@
       card.appendChild(title);
       card.appendChild(description);
       grid.appendChild(card);
+    });
+  }
+
+  function renderPlanFeatures(planKey, listId) {
+    var list = document.getElementById(listId);
+    var plan = config.pricing && config.pricing[planKey];
+    if (!list || !plan || !Array.isArray(plan.features)) {
+      return;
+    }
+
+    plan.features.forEach(function (feature) {
+      var item = document.createElement("li");
+      item.textContent = feature;
+      list.appendChild(item);
     });
   }
 
@@ -257,10 +331,23 @@
   }
 
   function hydrateStaticContent() {
+    var hero = config.hero || {};
+    var sections = config.sections || {};
+
     setText("brand-name", config.brand.name);
     setText("brand-tagline", config.brand.tagline);
+    setText("hero-eyebrow", hero.eyebrow);
+    setText("hero-title", hero.title);
+    setText("hero-description", hero.description);
     setText("hero-subscribe-link", config.cta.primary);
+    setText("hero-secondary-link", config.cta.secondary);
     setText("subscribe-button", config.cta.primary);
+    setText("beneficios-title", sections.benefitsTitle);
+    setText("beneficios-subtitle", sections.benefitsSubtitle);
+    setText("planos-title", sections.plansTitle);
+    setText("planos-subtitle", sections.plansSubtitle);
+    setText("confianca-title", sections.trustTitle);
+    setText("faq-title", sections.faqTitle);
     setText("monthly-name", config.pricing.monthly.name);
     setText("monthly-price", config.pricing.monthly.priceLabel);
     setText("monthly-period", config.pricing.monthly.pricePeriod);
@@ -274,6 +361,11 @@
     setHref("footer-terms", config.links.terms);
     setHref("footer-privacy", config.links.privacy);
 
+    var metaDescription = document.getElementById("meta-description");
+    if (metaDescription && hero.description) {
+      metaDescription.setAttribute("content", hero.description);
+    }
+
     var logo = document.getElementById("brand-logo");
     if (logo) {
       logo.src = config.brand.logoPath;
@@ -283,12 +375,25 @@
   hydrateStaticContent();
   renderHeroBenefits();
   renderBenefits();
+  renderPlanFeatures("monthly", "monthly-features");
+  renderPlanFeatures("yearly", "yearly-features");
   renderTrustBlocks();
   renderFaq();
   refreshPlanSelection();
 
   planInputs.forEach(function (input) {
     input.addEventListener("change", refreshPlanSelection);
+  });
+
+  planCards.forEach(function (card) {
+    card.addEventListener("click", function () {
+      var input = card.querySelector('input[name="plan_id"]');
+      if (!input || input.checked) {
+        return;
+      }
+      input.checked = true;
+      input.dispatchEvent(new Event("change", { bubbles: true }));
+    });
   });
 
   if (!hasAuthContext()) {
@@ -372,23 +477,13 @@
           if (result.body.subscription_id) {
             sessionStorage.setItem("pontomare_mp_preapproval_id", result.body.subscription_id);
           }
-          if (accessToken) {
-            sessionStorage.setItem("pontomare_mp_access_token", accessToken);
-          }
-          if (userId) {
-            sessionStorage.setItem("pontomare_mp_user_id", userId);
-          }
+          persistAuthContext(userId, accessToken);
           window.location.href = redirectUrl;
           return;
         }
 
-        if (result.body.status === "authorized" || result.body.status === "approved") {
-          window.location.href = "/assinatura/ponto-mare/sucesso.html?user_id=" + encodeURIComponent(userId);
-          return;
-        }
-
-        if (result.body.status === "pending") {
-          window.location.href = "/assinatura/ponto-mare/pendente.html?user_id=" + encodeURIComponent(userId);
+        if (result.body.status === "authorized" || result.body.status === "approved" || result.body.status === "pending") {
+          window.location.href = "/subscription/ponto-mare/backurl.html?user_id=" + encodeURIComponent(userId);
           return;
         }
 

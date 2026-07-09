@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" href="../../assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png" sizes="180x180">
   <title>Ponto Maré Premium | Assinatura para gestão de loja</title>
   <meta
+    id="meta-description"
     name="description"
-    content="Assine o Ponto Maré Premium e tenha acesso completo para vender com mais agilidade, controlar estoque e gerenciar sua loja no Android e Windows."
+    content="Assine o Ponto Maré Premium e libere o PDV completo para vender no balcão, controlar estoque, caixa, pagamentos e impressão no Android e Windows."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +26,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/assinatura/ponto-mare/" aria-label="Página de assinatura Ponto Maré Premium">
+      <a class="brand" href="/subscription/ponto-mare/" aria-label="Página de assinatura Ponto Maré Premium">
         <img id="brand-logo" src="../../assets/img/ponto-mare-logo.png" alt="Logo Ponto Maré" width="44" height="44">
         <div>
           <strong id="brand-name">Ponto Maré Premium</strong>
@@ -35,17 +40,16 @@
     <section class="hero section">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Produtividade para o seu negócio</p>
-          <h1>Venda mais rápido e gerencie sua loja com controle total</h1>
-          <p>
-            Assine o Ponto Maré Premium para liberar o acesso completo aos recursos do sistema
-            e manter sua operação organizada no desktop e no Android.
+          <p class="eyebrow" id="hero-eyebrow">PDV completo para lojas</p>
+          <h1 id="hero-title">Venda no balcão, controle estoque e caixa em um só sistema</h1>
+          <p id="hero-description">
+            O Ponto Maré Premium libera o PDV completo do app para operar venda, estoque, caixa e impressão no Android e no Windows.
           </p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="#planos" id="hero-subscribe-link">Assinar agora</a>
-            <a class="btn btn-secondary" href="#planos">Ver planos</a>
+            <a class="btn btn-secondary" href="#planos" id="hero-secondary-link">Ver planos</a>
           </div>
-          <p id="hero-warning" class="notice warning" hidden aria-live="polite"></p>
+          <p id="hero-warning" class="notice warning hero-warning" hidden aria-live="polite"></p>
         </div>
 
         <aside class="hero-card" aria-label="Resumo de valor">
@@ -57,7 +61,10 @@
 
     <section class="section" aria-labelledby="beneficios-title">
       <div class="container">
-        <h2 id="beneficios-title" class="section-title">Benefícios para acelerar sua operação</h2>
+        <div class="section-heading">
+          <h2 id="beneficios-title" class="section-title">O que o Premium libera na prática</h2>
+          <p id="beneficios-subtitle">Recursos reais do Ponto Maré para operar sua loja no dia a dia.</p>
+        </div>
         <div id="benefits-grid" class="benefits-grid"></div>
       </div>
     </section>
@@ -66,7 +73,7 @@
       <div class="container">
         <div class="section-heading">
           <h2 id="planos-title" class="section-title">Escolha o plano ideal</h2>
-          <p>Você pode começar mensalmente ou garantir economia no anual.</p>
+          <p id="planos-subtitle">Mensal para flexibilidade ou anual para melhor custo no período.</p>
         </div>
 
         <form id="subscription-form" novalidate>
@@ -79,12 +86,7 @@
                 <span id="monthly-period" class="price-period">/mês</span>
               </p>
               <p class="plan-description" id="monthly-description"></p>
-              <ul class="plan-list">
-                <li>Acesso completo aos recursos</li>
-                <li>Atualizações contínuas do sistema</li>
-                <li>Suporte para sua operação</li>
-              </ul>
-              <span class="plan-action">Assinar</span>
+              <ul class="plan-list" id="monthly-features"></ul>
             </label>
 
             <label class="plan-card featured" for="plan-yearly">
@@ -96,12 +98,7 @@
                 <span id="yearly-period" class="price-period">/ano</span>
               </p>
               <p class="plan-description" id="yearly-description"></p>
-              <ul class="plan-list">
-                <li>Acesso completo durante todo o ano</li>
-                <li>Melhor custo-benefício no período</li>
-                <li>Suporte para escala da sua loja</li>
-              </ul>
-              <span class="plan-action">Assinar</span>
+              <ul class="plan-list" id="yearly-features"></ul>
             </label>
           </div>
 
