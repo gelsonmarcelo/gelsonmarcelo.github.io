@@ -56,3 +56,8 @@ O `{{ .ConfirmationURL }}` já inclui o redirect correto quando configurado no a
 2. Cadastre um usuário de teste no app.
 3. Abra o link do e-mail de confirmação — deve passar por `auth-callback.html` e chegar em `email_confirmation.html`.
 4. Teste **Esqueci minha senha** — deve chegar em `reset-password.html`.
+
+## Troubleshooting
+
+- **Link inválido logo após clicar no e-mail:** confira se `reset-password.html` está publicado no GitHub Pages e se a URL está em **Redirect URLs** no Supabase. A página deve usar implicit flow (não PKCE) porque o link abre fora do app.
+- **429 / too many requests:** limite de e-mails do Supabase (2/h no free). Aguarde ou use `auth.admin.generateLink` para testes.

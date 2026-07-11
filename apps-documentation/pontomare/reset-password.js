@@ -14,11 +14,14 @@
   var resetForm = document.getElementById("reset-form");
   var submitButton = document.getElementById("submit-button");
 
+  // Implicit flow: o link do e-mail costuma abrir em outro dispositivo/navegador que o app
+  // que chamou resetPasswordForEmail. PKCE exige o code verifier no mesmo browser — falha aqui.
   var supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
     auth: {
       detectSessionInUrl: true,
-      flowType: "pkce"
-    }
+      flowType: "implicit",
+      persistSession: true,
+    },
   });
 
   var recoveryReady = false;
@@ -59,64 +62,158 @@
 
     validationFinished = true;
     recoveryReady = true;
+    clearSensitiveUrlParams();
     showView(formView);
   }
 
-  supabaseClient.auth.onAuthStateChange(function (event) {
-    if (event === "PASSWORD_RECOVERY") {
-      showRecoveryForm();
-    }
-  });
-
-  async function validateRecoveryLink() {
+  function parseAuthParams() {
     var hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
     var searchParams = new URLSearchParams(window.location.search);
-    var hasRecoveryHint =
-      hashParams.get("type") === "recovery" ||
-      searchParams.get("type") === "recovery" ||
-      searchParams.has("code") ||
-      hashParams.has("access_token");
+    return { hashParams: hashParams, searchParams: searchParams };
+  }
 
-    if (!hasRecoveryHint) {
+  function getParam(name, params) {
+    return params.hashParams.get(name) || params.searchParams.get(name);
+  }
+
+  function hasRecoveryHint(params) {
+    var type = getParam("type", params);
+    return (
+      type === "recovery" ||
+      params.searchParams.has("code") ||
+      params.hashParams.has("access_token") ||
+      getParam("token_hash", params) !== null ||
+      getParam("token", params) !== null
+    );
+  }
+
+  function clearSensitiveUrlParams() {
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }
+
+  function waitForAuthEvent(timeoutMs) {
+    return new Promise(function (resolve, reject) {
+      var finished = false;
+      var subscription = null;
+
+      var timeoutId = window.setTimeout(function () {
+        if (finished) {
+          return;
+        }
+        finished = true;
+        if (subscription) {
+          subscription.unsubscribe();
+        }
+        reject(new Error("timeout"));
+      }, timeoutMs);
+
+      var authListener = supabaseClient.auth.onAuthStateChange(function (event, session) {
+        if (finished) {
+          return;
+        }
+
+        if (event === "PASSWORD_RECOVERY" || (session && (event === "SIGNED_IN" || event === "INITIAL_SESSION"))) {
+          finished = true;
+          window.clearTimeout(timeoutId);
+          authListener.data.subscription.unsubscribe();
+          resolve(session);
+        }
+      });
+
+      subscription = authListener.data.subscription;
+    });
+  }
+
+  async function establishRecoverySession() {
+    var params = parseAuthParams();
+
+    var authError = getParam("error", params);
+    var authErrorDescription = getParam("error_description", params);
+    if (authError) {
+      throw new Error(
+        decodeURIComponent((authErrorDescription || authError).replace(/\+/g, " "))
+      );
+    }
+
+    var accessToken = getParam("access_token", params);
+    var refreshToken = getParam("refresh_token", params);
+    if (accessToken && refreshToken) {
+      var setSessionResult = await supabaseClient.auth.setSession({
+        access_token: accessToken,
+        refresh_token: refreshToken,
+      });
+      if (setSessionResult.error) {
+        throw setSessionResult.error;
+      }
+      if (setSessionResult.data.session) {
+        return;
+      }
+    }
+
+    var tokenHash = getParam("token_hash", params) || getParam("token", params);
+    var type = getParam("type", params);
+    if (tokenHash && type === "recovery") {
+      var verifyResult = await supabaseClient.auth.verifyOtp({
+        token_hash: tokenHash,
+        type: "recovery",
+      });
+      if (verifyResult.error) {
+        throw verifyResult.error;
+      }
+      if (verifyResult.data.session) {
+        return;
+      }
+    }
+
+    var code = getParam("code", params);
+    if (code) {
+      var exchangeResult = await supabaseClient.auth.exchangeCodeForSession(code);
+      if (exchangeResult.error) {
+        throw exchangeResult.error;
+      }
+      if (exchangeResult.data.session) {
+        return;
+      }
+    }
+
+    var sessionResult = await supabaseClient.auth.getSession();
+    if (sessionResult.error) {
+      throw sessionResult.error;
+    }
+    if (sessionResult.data.session) {
+      return;
+    }
+
+    try {
+      await waitForAuthEvent(8000);
+      return;
+    } catch (waitError) {
+      if (waitError && waitError.message === "timeout") {
+        throw new Error("Não foi possível validar o link de redefinição de senha.");
+      }
+      throw waitError;
+    }
+  }
+
+  async function validateRecoveryLink() {
+    var params = parseAuthParams();
+
+    if (!hasRecoveryHint(params)) {
       showInvalidLink("Abra esta página pelo link enviado no e-mail de redefinição de senha.");
       return;
     }
 
-    await new Promise(function (resolve) {
-      window.setTimeout(resolve, 500);
-    });
-
-    var sessionResult = await supabaseClient.auth.getSession();
-
-    if (sessionResult.error) {
-      showInvalidLink(sessionResult.error.message);
-      return;
-    }
-
-    if (sessionResult.data.session) {
+    try {
+      await establishRecoverySession();
       showRecoveryForm();
-      return;
+    } catch (error) {
+      var message =
+        (error && error.message) ||
+        "O link pode ter expirado ou já ter sido utilizado.";
+      showInvalidLink(message);
     }
-
-    window.setTimeout(async function () {
-      if (validationFinished) {
-        return;
-      }
-
-      var retryResult = await supabaseClient.auth.getSession();
-
-      if (retryResult.error) {
-        showInvalidLink(retryResult.error.message);
-        return;
-      }
-
-      if (retryResult.data.session) {
-        showRecoveryForm();
-        return;
-      }
-
-      showInvalidLink("O link pode ter expirado ou já ter sido utilizado.");
-    }, 3000);
   }
 
   resetForm.addEventListener("submit", async function (event) {
@@ -161,6 +258,7 @@
     }
 
     await supabaseClient.auth.signOut();
+    clearSensitiveUrlParams();
     showView(successView);
   });
 
