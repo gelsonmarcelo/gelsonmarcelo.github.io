@@ -8,6 +8,7 @@
       "projects": "Projetos",
       "contact": "Contato",
       "documentation": "Documentação",
+      "downloads": "Downloads",
       "privacy": "Privacidade",
       "terms": "Termos"
     },
@@ -39,7 +40,7 @@
   "home": {
     "meta": {
       "title": "Gelson Marcelo — Desenvolvedor Mobile",
-      "description": "Gelson Marcelo — desenvolvedor mobile. Apps publicados: Coleta Frai e Slice Heads."
+      "description": "Gelson Marcelo — desenvolvedor mobile. Apps publicados: Ponto Maré, Coleta Frai e Slice Heads."
     },
     "hero": {
       "eyebrow": "Desenvolvedor mobile",
@@ -65,7 +66,13 @@
     },
     "projects": {
       "title": "Projetos publicados",
-      "intro": "Dois apps na Google Play, com documentação e política de privacidade hospedadas aqui.",
+      "intro": "Apps na Google Play e no Windows, com documentação e política de privacidade hospedadas aqui.",
+      "pontoMare": {
+        "name": "Ponto Maré",
+        "tag": "PDV · Android e Windows",
+        "description": "Sistema de ponto de venda para lojas: produtos, estoque, vendas, caixa, pagamentos e impressão de cupons e etiquetas. Funciona no Android e no desktop Windows, com a mesma conta.",
+        "screenshotAlt": "Ponto Maré — PDV para lojas no Android e Windows"
+      },
       "coletaFrai": {
         "name": "Coleta Frai",
         "tag": "Utilitário · Ambiente",
@@ -87,6 +94,7 @@
       "avatarPath": "assets/img/avatar.jpg",
       "avatarHint": "Sua foto aqui",
       "screenshotHint": "Screenshot do app",
+      "pontoMarePath": "assets/img/ponto-mare.png",
       "coletaFraiPath": "assets/img/coleta-frai.png",
       "sliceHeadsPath": "assets/img/slice-heads.png"
     }
@@ -660,7 +668,73 @@
       "heading": "Termos de uso",
       "link": "<a href=\"terms-of-use.html\">Acesse os termos de uso do Ponto Maré.</a>"
     },
-    "footerHtml": "<a href=\"../../index.html\">Início</a> · <a href=\"privacy-policy.html\">Política de privacidade</a> · <a href=\"terms-of-use.html\">Termos de uso</a>"
+    "footerHtml": "<a href=\"../../index.html\">Início</a> · <a href=\"releases.html\">Downloads</a> · <a href=\"privacy-policy.html\">Política de privacidade</a> · <a href=\"terms-of-use.html\">Termos de uso</a>"
+  },
+  "pontoMareReleases": {
+    "meta": {
+      "title": "Downloads — Ponto Maré",
+      "description": "Downloads e histórico de versões do Ponto Maré para Android e Windows."
+    },
+    "breadcrumb": {
+      "app": "Ponto Maré",
+      "current": "Downloads"
+    },
+    "title": "Downloads — Ponto Maré",
+    "logoAlt": "Ponto Maré",
+    "latestVersionLabel": "Versão mais recente:",
+    "latestDateLabel": "Publicada em",
+    "intro": "Baixe o Ponto Maré para Android na Google Play ou instale a versão desktop para Windows. Use a mesma conta de e-mail e senha em todas as plataformas — a assinatura ativa vale em qualquer uma delas.",
+    "googlePlayAlt": "Disponível no Google Play",
+    "packageLabel": "Pacote:",
+    "fileLabel": "Arquivo:",
+    "android": {
+      "heading": "Android",
+      "description": "Disponível na Google Play para smartphones e tablets com Android 8.0 (API 26) ou superior."
+    },
+    "windows": {
+      "heading": "Windows (desktop)",
+      "description": "Instalador para Windows 10 ou superior (64 bits). Compatível com a mesma conta e assinatura usadas no Android.",
+      "downloadButton": "Baixar para Windows"
+    },
+    "subscription": {
+      "heading": "Assinatura",
+      "crossPlatformNotice": "<strong>Assinatura por conta:</strong> a assinatura fica vinculada à sua <strong>conta</strong> do Ponto Maré, não ao aparelho. Se você assinar pelo <strong>Android</strong> (Google Play) ou pelo <strong>Windows</strong> (Mercado Pago no desktop), o acesso liberado vale em <strong>qualquer plataforma</strong> em que entrar com a mesma conta de e-mail e senha.",
+      "desktopNote": "No Android, a assinatura é feita pela Google Play. No desktop, abra a opção de assinatura dentro do aplicativo — o pagamento abre no navegador e deve ser iniciado pelo app para vincular corretamente à sua conta. Mais detalhes em <a href=\"../../subscription/ponto-mare/\">Ponto Maré Premium</a>."
+    },
+    "install": {
+      "heading": "Como instalar no Windows",
+      "intro": "Siga os passos abaixo após baixar o instalador. Se o Windows exibir um aviso de segurança, isso é comum em aplicativos que ainda não possuem certificado de assinatura de código reconhecido pela Microsoft.",
+      "steps": [
+        "Baixe o instalador <code>.exe</code> pelo botão <strong>Baixar para Windows</strong> nesta página.",
+        "Abra a pasta <strong>Downloads</strong> (ou o local escolhido no navegador) e execute o arquivo do Ponto Maré.",
+        "Se o Windows SmartScreen exibir <em>“O Windows protegeu seu PC”</em>, clique em <strong>Mais informações</strong> e depois em <strong>Executar assim mesmo</strong>.",
+        "Siga o assistente de instalação até concluir. Aceite instalar apenas se você baixou o arquivo desta página oficial.",
+        "Abra o Ponto Maré pelo menu Iniciar ou atalho criado na área de trabalho e entre com sua conta (e-mail e senha).",
+        "Na primeira execução, confira o status da assinatura ou período de teste nas configurações do app."
+      ],
+      "smartScreenNotice": "<strong>Aviso do Windows SmartScreen:</strong> ao abrir o instalador pela primeira vez, o Windows pode mostrar a mensagem <em>“O Windows protegeu seu PC”</em>. Clique em <strong>Mais informações</strong> e depois em <strong>Executar assim mesmo</strong> para continuar. O instalador é distribuído pelo desenvolvedor do Ponto Maré; verifique se o download foi feito a partir desta página oficial."
+    },
+    "changelog": {
+      "heading": "Histórico de versões",
+      "intro": "Principais mudanças de cada versão publicada. Versões mais antigas permanecem disponíveis para download quando listadas abaixo.",
+      "versionLabel": "Versão",
+      "latestBadge": "Mais recente",
+      "downloadWindows": "Baixar instalador Windows desta versão",
+      "v1_0_0_18": [
+        "Versão 1.0.0 do Ponto Maré para operação de loja no Android e Windows.",
+        "Módulos de venda, produtos, estoque, caixa, pagamentos e configurações operacionais.",
+        "Impressão de cupons e etiquetas, backup local e remoto, produtos remotos e logs protegidos por senha de administrador.",
+        "Conta com e-mail e senha; assinatura no Android ou no Windows vale para a mesma conta em qualquer plataforma.",
+        "Versão desktop para Windows com os mesmos recursos principais do app Android."
+      ]
+    },
+    "related": {
+      "heading": "Links relacionados",
+      "subscription": "Assinatura Premium",
+      "support": "Suporte por e-mail"
+    },
+    "footerNote": "Ponto Maré — downloads oficiais.",
+    "footerHtml": "<a href=\"../../index.html\">Início</a> · <a href=\"index.html\">Documentação</a> · <a href=\"privacy-policy.html\">Política de privacidade</a> · <a href=\"terms-of-use.html\">Termos de uso</a>"
   },
   "pontoMarePrivacy": {
     "meta": {

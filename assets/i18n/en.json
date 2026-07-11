@@ -8,6 +8,7 @@
       "projects": "Projects",
       "contact": "Contact",
       "documentation": "Documentation",
+      "downloads": "Downloads",
       "privacy": "Privacy",
       "terms": "Terms"
     },
@@ -39,7 +40,7 @@
   "home": {
     "meta": {
       "title": "Gelson Marcelo — Mobile Developer",
-      "description": "Gelson Marcelo — mobile developer. Published apps: Coleta Frai and Slice Heads."
+      "description": "Gelson Marcelo — mobile developer. Published apps: Ponto Maré, Coleta Frai, and Slice Heads."
     },
     "hero": {
       "eyebrow": "Mobile developer",
@@ -65,7 +66,13 @@
     },
     "projects": {
       "title": "Published projects",
-      "intro": "Two apps on Google Play, with documentation and privacy policy hosted here.",
+      "intro": "Apps on Google Play and Windows, with documentation and privacy policy hosted here.",
+      "pontoMare": {
+        "name": "Ponto Maré",
+        "tag": "POS · Android and Windows",
+        "description": "Point-of-sale system for stores: products, inventory, sales, cash register, payments, and receipt and label printing. Runs on Android and Windows desktop with the same account.",
+        "screenshotAlt": "Ponto Maré — POS for stores on Android and Windows"
+      },
       "coletaFrai": {
         "name": "Coleta Frai",
         "tag": "Utility · Environment",
@@ -87,6 +94,7 @@
       "avatarPath": "assets/img/avatar.jpg",
       "avatarHint": "Your photo here",
       "screenshotHint": "App screenshot",
+      "pontoMarePath": "assets/img/ponto-mare.png",
       "coletaFraiPath": "assets/img/coleta-frai.png",
       "sliceHeadsPath": "assets/img/slice-heads.png"
     }
@@ -660,15 +668,15 @@
       "heading": "Terms of use",
       "link": "<a href=\"terms-of-use.html\">Open the Ponto Maré terms of use.</a>"
     },
-    "footerHtml": "<a href=\"../../index.html\">Home</a> · <a href=\"privacy-policy.html\">Privacy policy</a> · <a href=\"terms-of-use.html\">Terms of use</a>",
+    "footerHtml": "<a href=\"../../index.html\">Home</a> · <a href=\"releases.html\">Downloads</a> · <a href=\"privacy-policy.html\">Privacy policy</a> · <a href=\"terms-of-use.html\">Terms of use</a>",
     "contentHtml": [
       "<h1>Ponto Maré Documentation</h1>",
       "<p class='meta'><strong>Last updated</strong>: June 17, 2026</p>",
       "<p class='center'><img src='../../assets/img/ponto-mare-logo.png' alt='Ponto Maré' width='96' height='96'></p>",
-      "<p><strong>Android package:</strong> <code>com.gelsonschikorski.pontomare</code><br><strong>Reference version:</strong> <code>0.1.0+17</code><br><strong>Contact:</strong> <a href='mailto:gelsonschikorski1998@gmail.com'>gelsonschikorski1998@gmail.com</a></p>",
+      "<p><strong>Android package:</strong> <code>com.gelsonschikorski.pontomare</code><br><strong>Reference version:</strong> <code>1.0.0+18</code><br><strong>Contact:</strong> <a href='mailto:contato.pontomare@gmail.com'>contato.pontomare@gmail.com</a></p>",
       "<p><strong>Ponto Maré</strong> is a point-of-sale system for stores. It was built to help with product registration, inventory control, sales records, cash register control, payment tracking, receipt and label printing, backups, and operational settings for the business.</p>",
       "<p>This documentation provides an overview of the app and describes the main features available to the user.</p>",
-      "<h2>Important Links</h2><ul><li><a href='privacy-policy.html'>Privacy policy</a></li><li><a href='terms-of-use.html'>Terms of use</a></li><li><a href='mailto:gelsonschikorski1998@gmail.com'>Email support</a></li></ul>",
+      "<h2>Important Links</h2><ul><li><a href='releases.html'>Downloads (Android and Windows)</a></li><li><a href='privacy-policy.html'>Privacy policy</a></li><li><a href='terms-of-use.html'>Terms of use</a></li><li><a href='mailto:contato.pontomare@gmail.com'>Email support</a></li></ul>",
       "<figure class='doc-img-row'><img src='../../assets/img/ponto-mare-logo.png' alt='Ponto Maré'><figcaption>Temporary Ponto Maré image. Replace it with real app screenshots when available.</figcaption></figure>",
       "<h2>Notice</h2>",
       "<p>Ponto Maré is an independent app developed by <strong>Gelson Schikorski</strong>. It does not replace professional accounting, tax, legal, or administrative advice.</p>",
@@ -798,8 +806,74 @@
       "<h2>Privacy Policy and Terms</h2>",
       "<p>For information about data collection, use, storage, sharing, and deletion, see the <a href='privacy-policy.html'>Ponto Maré Privacy Policy</a>.</p>",
       "<p>For usage rules, user responsibilities, subscription, limitations, and general conditions, see the <a href='terms-of-use.html'>Ponto Maré Terms of Use</a>.</p>",
-      "<div class='doc-footer-block'><h2>Contact and Feedback</h2><p><strong>Questions and support:</strong> <a href='mailto:gelsonschikorski1998@gmail.com'>gelsonschikorski1998@gmail.com</a></p><p><strong>Bugs:</strong> support channel to be defined.</p><p><strong>Suggestions:</strong> ideas channel to be defined.</p><p class='doc-footer-note'>Ponto Maré - user documentation.</p></div>"
+      "<div class='doc-footer-block'><h2>Contact and Feedback</h2><p><strong>Questions and support:</strong> <a href='mailto:contato.pontomare@gmail.com'>contato.pontomare@gmail.com</a></p><p><strong>Bugs:</strong> support channel to be defined.</p><p><strong>Suggestions:</strong> ideas channel to be defined.</p><p class='doc-footer-note'>Ponto Maré - user documentation.</p></div>"
     ]
+  },
+  "pontoMareReleases": {
+    "meta": {
+      "title": "Downloads — Ponto Maré",
+      "description": "Downloads and release history for Ponto Maré on Android and Windows."
+    },
+    "breadcrumb": {
+      "app": "Ponto Maré",
+      "current": "Downloads"
+    },
+    "title": "Downloads — Ponto Maré",
+    "logoAlt": "Ponto Maré",
+    "latestVersionLabel": "Latest version:",
+    "latestDateLabel": "Released on",
+    "intro": "Download Ponto Maré for Android on Google Play or install the desktop version for Windows. Use the same email and password account on all platforms — an active subscription works on any of them.",
+    "googlePlayAlt": "Get it on Google Play",
+    "packageLabel": "Package:",
+    "fileLabel": "File:",
+    "android": {
+      "heading": "Android",
+      "description": "Available on Google Play for phones and tablets running Android 8.0 (API 26) or later."
+    },
+    "windows": {
+      "heading": "Windows (desktop)",
+      "description": "Installer for Windows 10 or later (64-bit). Works with the same account and subscription as on Android.",
+      "downloadButton": "Download for Windows"
+    },
+    "subscription": {
+      "heading": "Subscription",
+      "crossPlatformNotice": "<strong>Subscription per account:</strong> your subscription is linked to your Ponto Maré <strong>account</strong>, not to a single device. If you subscribe on <strong>Android</strong> (Google Play) or on <strong>Windows</strong> (Mercado Pago on desktop), access is granted on <strong>any platform</strong> where you sign in with the same email and password.",
+      "desktopNote": "On Android, subscribe through Google Play. On desktop, open the subscription option inside the app — payment opens in the browser and must be started from the app so it is linked to your account. See <a href=\"../../subscription/ponto-mare/\">Ponto Maré Premium</a> for details."
+    },
+    "install": {
+      "heading": "How to install on Windows",
+      "intro": "Follow the steps below after downloading the installer. If Windows shows a security warning, that is common for apps that do not yet have a Microsoft-recognized code signing certificate.",
+      "steps": [
+        "Download the <code>.exe</code> installer using the <strong>Download for Windows</strong> button on this page.",
+        "Open your <strong>Downloads</strong> folder (or the location chosen in the browser) and run the Ponto Maré setup file.",
+        "If Windows SmartScreen shows <em>“Windows protected your PC”</em>, click <strong>More info</strong> and then <strong>Run anyway</strong>.",
+        "Follow the setup wizard until installation completes. Only proceed if you downloaded the file from this official page.",
+        "Open Ponto Maré from the Start menu or desktop shortcut and sign in with your account (email and password).",
+        "On first launch, check subscription or trial status in the app settings."
+      ],
+      "smartScreenNotice": "<strong>Windows SmartScreen notice:</strong> when opening the installer for the first time, Windows may show <em>“Windows protected your PC”</em>. Click <strong>More info</strong> and then <strong>Run anyway</strong> to continue. The installer is distributed by the Ponto Maré developer; make sure you downloaded it from this official page."
+    },
+    "changelog": {
+      "heading": "Release history",
+      "intro": "Main changes in each published version. Older versions remain available for download when listed below.",
+      "versionLabel": "Version",
+      "latestBadge": "Latest",
+      "downloadWindows": "Download Windows installer for this version",
+      "v1_0_0_18": [
+        "Ponto Maré version 1.0.0 for store operations on Android and Windows.",
+        "Sales, products, inventory, cash register, payments, and operational settings modules.",
+        "Receipt and label printing, local and remote backup, remote products, and admin-protected logs.",
+        "Email and password account; subscription on Android or Windows applies to the same account on any platform.",
+        "Windows desktop version with the same core features as the Android app."
+      ]
+    },
+    "related": {
+      "heading": "Related links",
+      "subscription": "Premium subscription",
+      "support": "Email support"
+    },
+    "footerNote": "Ponto Maré — official downloads.",
+    "footerHtml": "<a href=\"../../index.html\">Home</a> · <a href=\"index.html\">Documentation</a> · <a href=\"privacy-policy.html\">Privacy policy</a> · <a href=\"terms-of-use.html\">Terms of use</a>"
   },
   "pontoMarePrivacy": {
     "meta": {
