@@ -276,3 +276,104 @@
 .nav a.is-active {
   color: var(--accent);
 }
+
+.doc-download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.doc-download-card {
+  padding: 1.25rem 1.35rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.doc-download-card h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.doc-download-card p {
+  text-align: left;
+}
+
+.doc-download-actions {
+  margin: 1rem 0 0.75rem;
+  text-align: left;
+}
+
+.doc-download-meta {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.doc-install-steps {
+  margin: 0 0 1.25rem;
+  padding-left: 1.35rem;
+}
+
+.doc-install-steps li {
+  margin-bottom: 0.55em;
+}
+
+.doc-changelog {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.doc-changelog-version {
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+}
+
+.doc-changelog-header h3 {
+  margin: 0 0 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.65rem;
+}
+
+.doc-changelog-date {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: left;
+}
+
+.doc-changelog-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent-hover);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+}
+
+.doc-changelog-version ul {
+  margin-bottom: 0.75rem;
+}
+
+.doc-changelog-download {
+  margin: 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .doc-download-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gelson Marcelo — desenvolvedor mobile. Apps publicados: Coleta Frai e Slice Heads.">
+  <meta name="description" content="Gelson Marcelo — desenvolvedor mobile. Apps publicados: Ponto Maré, Coleta Frai e Slice Heads.">
   <title>Gelson Marcelo — Desenvolvedor Mobile</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -91,11 +91,50 @@
       <div class="container">
         <h2 data-i18n="home.projects.title">Projetos publicados</h2>
         <p class="section-intro" data-i18n="home.projects.intro">
-          Dois apps na Google Play, com documentação e política de privacidade
+          Apps na Google Play e no Windows, com documentação e política de privacidade
           hospedadas aqui.
         </p>
 
         <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img
+                class="project-img"
+                src="assets/img/ponto-mare.png"
+                data-i18n-attr="alt:home.projects.pontoMare.screenshotAlt"
+                alt="Ponto Maré — PDV para lojas no Android e Windows"
+                width="320"
+                height="568"
+                onload="this.nextElementSibling.setAttribute('hidden','')"
+                onerror="this.setAttribute('hidden','')"
+              >
+              <div class="img-placeholder project-placeholder">
+                <span data-i18n="home.placeholders.pontoMarePath">assets/img/ponto-mare.png</span>
+                <small data-i18n="home.placeholders.screenshotHint">Screenshot do app</small>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="home.projects.pontoMare.name">Ponto Maré</h3>
+              <p class="project-tag" data-i18n="home.projects.pontoMare.tag">PDV · Android e Windows</p>
+              <p data-i18n="home.projects.pontoMare.description">
+                Sistema de ponto de venda para lojas: produtos, estoque, vendas,
+                caixa, pagamentos e impressão de cupons e etiquetas. Funciona no
+                Android e no desktop Windows, com a mesma conta.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.gelsonschikorski.pontomare"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="common.googlePlay"
+                >Google Play</a>
+                <a href="apps-documentation/pontomare/releases.html" data-i18n="common.nav.downloads">Downloads</a>
+                <a href="apps-documentation/pontomare/index.html" data-i18n="common.documentation">Documentação</a>
+                <a href="apps-documentation/pontomare/privacy-policy.html" data-i18n="common.privacy">Privacidade</a>
+              </div>
+            </div>
+          </article>
+
           <article class="project-card">
             <div class="project-media">
               <img

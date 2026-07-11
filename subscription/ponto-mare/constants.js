@@ -3,7 +3,7 @@
     brand: {
       name: "Ponto Maré Premium",
       tagline: "Sistema de ponto de venda para lojas",
-      supportEmail: "suporte@pontomare.com.br",
+      supportEmail: "contato.pontomare@gmail.com",
       logoPath: "../../assets/img/ponto-mare-logo.png"
     },
     hero: {
