@@ -32,8 +32,13 @@
     return;
   }
 
-  if (accessToken || type === 'signup' || type === 'email_change' || type === 'recovery') {
+  if (accessToken || type === 'signup' || type === 'email_change') {
     show('state-success');
+    return;
+  }
+
+  if (type === 'recovery') {
+    window.location.replace('reset-password.html' + window.location.search + window.location.hash);
     return;
   }
 
