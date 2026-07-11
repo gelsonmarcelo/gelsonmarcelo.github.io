@@ -673,7 +673,7 @@
       "<h1>Ponto Maré Documentation</h1>",
       "<p class='meta'><strong>Last updated</strong>: June 17, 2026</p>",
       "<p class='center'><img src='../../assets/img/ponto-mare-logo.png' alt='Ponto Maré' width='96' height='96'></p>",
-      "<p><strong>Android package:</strong> <code>com.gelsonschikorski.pontomare</code><br><strong>Reference version:</strong> <code>1.0.0+18</code><br><strong>Contact:</strong> <a href='mailto:contato.pontomare@gmail.com'>contato.pontomare@gmail.com</a></p>",
+      "<p><strong>Android package:</strong> <code>com.gelsonschikorski.pontomare</code><br><strong>Reference version:</strong> <code>1.0.0+19</code><br><strong>Contact:</strong> <a href='mailto:contato.pontomare@gmail.com'>contato.pontomare@gmail.com</a></p>",
       "<p><strong>Ponto Maré</strong> is a point-of-sale system for stores. It was built to help with product registration, inventory control, sales records, cash register control, payment tracking, receipt and label printing, backups, and operational settings for the business.</p>",
       "<p>This documentation provides an overview of the app and describes the main features available to the user.</p>",
       "<h2>Important Links</h2><ul><li><a href='releases.html'>Downloads (Android and Windows)</a></li><li><a href='privacy-policy.html'>Privacy policy</a></li><li><a href='terms-of-use.html'>Terms of use</a></li><li><a href='mailto:contato.pontomare@gmail.com'>Email support</a></li></ul>",
@@ -859,8 +859,8 @@
       "versionLabel": "Version",
       "latestBadge": "Latest",
       "downloadWindows": "Download Windows installer for this version",
-      "v1_0_0_18": [
-        "Ponto Maré version 1.0.0 for store operations on Android and Windows.",
+      "v1_0_0_19": [
+        "Ponto Maré version 1.0.0+19 for store operations on Android and Windows.",
         "Sales, products, inventory, cash register, payments, and operational settings modules.",
         "Receipt and label printing, local and remote backup, remote products, and admin-protected logs.",
         "Email and password account; subscription on Android or Windows applies to the same account on any platform.",

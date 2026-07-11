@@ -25,12 +25,12 @@
     supabaseBucket: BUCKET,
     releases: [
       {
-        version: "1.0.0+18",
+        version: "1.0.0+19",
         date: "2026-07-11",
         latest: true,
         windows: {
-          fileName: "PontoMare-Setup-1.0.0+18.exe",
-          url: "https://nvfrjjoktlkpuuwxaxqv.supabase.co/storage/v1/object/public/pontomare-releases/PontoMare-Setup-1.0.0+18.exe"
+          fileName: "PontoMare-Setup-1.0.0+19.exe",
+          url: "https://nvfrjjoktlkpuuwxaxqv.supabase.co/storage/v1/object/public/pontomare-releases/PontoMare-Setup-1.0.0+19.exe"
         }
       }
     ]

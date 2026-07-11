@@ -15,9 +15,9 @@ O instalador Windows **não** fica no repositório GitHub Pages. Apenas o link a
 
 ## Pré-requisitos
 
-- Instalador `.exe` gerado pelo build Flutter/desktop (ex.: `PontoMare-Setup-1.0.0+18.exe`).
+- Instalador `.exe` gerado pelo build Flutter/desktop (ex.: `PontoMare-Setup-1.0.0+19.exe`).
 - Bucket **`pontomare-releases`** no Supabase com leitura pública dos arquivos.
-- Nome do arquivo alinhado ao padrão: `PontoMare-Setup-<versão>.exe` (ex.: `PontoMare-Setup-1.0.0+18.exe`).
+- Nome do arquivo alinhado ao padrão: `PontoMare-Setup-<versão>.exe` (ex.: `PontoMare-Setup-1.0.0+19.exe`).
 
 ### Bucket Supabase
 
@@ -54,21 +54,21 @@ Exemplo:
 ```javascript
 releases: [
   {
-    version: "1.0.0+19",
+    version: "1.0.0+20",
     date: "2026-08-01",
     latest: true,
     windows: {
-      fileName: "PontoMare-Setup-1.0.0+19.exe",
-      url: buildUrl("PontoMare-Setup-1.0.0+19.exe")
+      fileName: "PontoMare-Setup-1.0.0+20.exe",
+      url: buildUrl("PontoMare-Setup-1.0.0+20.exe")
     }
   },
   {
-    version: "1.0.0+18",
+    version: "1.0.0+19",
     date: "2026-07-11",
     latest: false,
     windows: {
-      fileName: "PontoMare-Setup-1.0.0+18.exe",
-      url: buildUrl("PontoMare-Setup-1.0.0+18.exe")
+      fileName: "PontoMare-Setup-1.0.0+19.exe",
+      url: buildUrl("PontoMare-Setup-1.0.0+19.exe")
     }
   }
 ]
@@ -92,16 +92,16 @@ Arquivo: `apps-documentation/pontomare/releases.html`
 Exemplo de novo bloco:
 
 ```html
-<article class="doc-changelog-version" data-release-version="1.0.0+19">
+<article class="doc-changelog-version" data-release-version="1.0.0+20">
   <header class="doc-changelog-header">
     <h3>
       <span data-i18n="pontoMareReleases.changelog.versionLabel">Versão</span>
-      <code>1.0.0+19</code>
+      <code>1.0.0+20</code>
       <span class="doc-changelog-badge" data-i18n="pontoMareReleases.changelog.latestBadge">Mais recente</span>
     </h3>
     <p class="doc-changelog-date"><time datetime="2026-08-01">1 de agosto de 2026</time></p>
   </header>
-  <ul data-i18n-list="pontoMareReleases.changelog.v1_0_0_19">
+  <ul data-i18n-list="pontoMareReleases.changelog.v1_0_0_20">
     <li></li>
     <li></li>
   </ul>
@@ -111,7 +111,7 @@ Exemplo de novo bloco:
 </article>
 ```
 
-**Convenção da chave i18n do changelog:** versão `1.0.0+19` → `pontoMareReleases.changelog.v1_0_0_19` (pontos e `+` viram `_`).
+**Convenção da chave i18n do changelog:** versão `1.0.0+20` → `pontoMareReleases.changelog.v1_0_0_20` (pontos e `+` viram `_`).
 
 ### 4. Atualizar traduções (i18n)
 
@@ -123,7 +123,7 @@ Arquivos:
 Em `pontoMareReleases.changelog`, adicione a chave da nova versão com a lista de mudanças:
 
 ```json
-"v1_0_0_19": [
+"v1_0_0_20": [
   "Descrição da mudança 1.",
   "Descrição da mudança 2."
 ]
