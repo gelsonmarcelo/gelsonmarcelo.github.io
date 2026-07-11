@@ -169,13 +169,9 @@
 
     var code = getParam("code", params);
     if (code) {
-      var exchangeResult = await supabaseClient.auth.exchangeCodeForSession(code);
-      if (exchangeResult.error) {
-        throw exchangeResult.error;
-      }
-      if (exchangeResult.data.session) {
-        return;
-      }
+      throw new Error(
+        "Este link de redefinição usa código PKCE e precisa ser gerado em fluxo implícito para abrir no navegador."
+      );
     }
 
     var sessionResult = await supabaseClient.auth.getSession();
